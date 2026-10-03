@@ -1,8 +1,10 @@
 name: Deploy
 
+# Mise en ligne manuelle pour l'instant (onglet Actions → Deploy → Run workflow).
+# Pour publier à chaque push sur main, ajouter sous `on:` :
+#   push:
+#     branches: [main]
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
