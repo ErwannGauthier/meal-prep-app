@@ -1,0 +1,14 @@
+# Copier en config.toml (ignoré par git), puis adapter.
+account = "bourr_"
+max_reels_per_run = 30   # reels traités au maximum par lancement
+max_attempts = 3         # tentatives avant d'abandonner un reel en échec
+delay_min_s = 20         # pause aléatoire entre deux téléchargements Instagram
+delay_max_s = 60
+cookies_file = ""        # cookies.txt (format Netscape) du compte secondaire ; vide = aucun
+claude_model = "claude-sonnet-5-5"
+
+[whisper]
+bin = "~/whisper.cpp/build/bin/whisper-cli"
+gpu_model = "~/whisper.cpp/models/ggml-large-v3-turbo.bin"
+cpu_model = "~/whisper.cpp/models/ggml-small.bin"
+use_gpu = true

@@ -54,7 +54,7 @@ meal-prep-app/
 │       └── thumbs/<id>.webp
 ├── data/
 │   ├── state.json               # statut de chaque reel connu
-│   └── sources/<id>.json        # description + transcription conservées
+│   └── sources/                 # LOCAL, ignoré par git : <id>.json (description + transcription), <id>.webp (miniature en attente)
 ├── config.example.toml          # config.toml et cookies : ignorés par git
 ├── .gitignore
 └── .github/workflows/deploy.yml
@@ -62,7 +62,14 @@ meal-prep-app/
 
 Flux : `pipeline run` → écrit JSON + miniatures → `git commit && git push` → GitHub Action build Vite → déploiement GitHub Pages.
 
-`config.toml` et le fichier de cookies Instagram sont listés dans `.gitignore` : le dépôt étant public, ils ne doivent jamais être commités. `publish` n'ajoute que `web/public/data/` et `data/`.
+`config.toml` et le fichier de cookies Instagram sont listés dans `.gitignore` : le dépôt étant public, ils ne doivent jamais être commités. `publish` n'ajoute que `web/public/data/` et `data/state.json`.
+
+Décisions du 2026-10-03 (après essai réel et relecture) :
+- `data/sources/` reste en local (ignoré par git) : les descriptions et transcriptions du créateur ne sont pas publiées.
+- La miniature d'un reel est gardée dans `data/sources/` et copiée dans `web/public/data/thumbs/` seulement quand la recette est retenue : les reels écartés ne laissent rien sur le site.
+- `publish` ne crée un commit que si `web/public/data/` a changé ; `data/state.json` part alors dans le même commit.
+- Un seul lancement à la fois (verrou) ; code de sortie non nul en cas d'arrêt anticipé.
+- yt-dlp répond la même chose pour un reel supprimé et pour un blocage : en cas de refus, le pipeline sonde un reel déjà traité pour trancher ; un reel qui interrompt 5 lancements de suite est abandonné ; `python -m pipeline retry` remet en file les reels en échec.
 
 Le **seul contrat** entre le pipeline et le site est le format de `recipes.json` et `ingredients.json` (section 4). Le pipeline ignore React ; le site ignore Instagram.
 

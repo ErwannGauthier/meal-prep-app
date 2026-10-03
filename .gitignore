@@ -1,0 +1,20 @@
+# Secrets — le dépôt est public
+config.toml
+*cookies*.txt
+*.cookies
+
+# Python
+.venv/
+__pycache__/
+*.egg-info/
+
+# Fichiers temporaires du pipeline
+data/work/
+*.tmp
+
+# Descriptions, transcriptions et miniatures en attente : restent en local
+data/sources/
+
+# Web
+node_modules/
+web/dist/
