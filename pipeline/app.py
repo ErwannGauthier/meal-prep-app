@@ -215,7 +215,7 @@ def run(cfg: Config, svc: Services, *, do_publish: bool = True) -> RunSummary:
         store.save_state(state)
 
     if do_publish:
-        _publish(svc, summary, f"data: {len(summary.new_recipes)} nouvelle(s) recette(s)")
+        _publish(svc, summary, f"🍱 data: {len(summary.new_recipes)} nouvelle(s) recette(s)")
     return summary
 
 
@@ -249,5 +249,5 @@ def reextract(cfg: Config, svc: Services, ids: list[str] | None, *, do_publish: 
         summary.new_recipes.append(recipe.title)
     store.save_state(state)
     if do_publish:
-        _publish(svc, summary, f"data: {len(summary.new_recipes)} recette(s) ré-extraite(s)")
+        _publish(svc, summary, f"🍱 data: {len(summary.new_recipes)} recette(s) ré-extraite(s)")
     return summary

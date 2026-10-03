@@ -131,7 +131,7 @@ def test_run_processes_queue_saves_recipes_sources_and_publishes(store):
     assert store.load_source("A").transcript == "transcription"
     assert {k: v.status for k, v in store.load_state().reels.items()} == {"A": "done", "B": "done"}
     assert sleeps == [1]                       # une pause entre deux téléchargements
-    assert published == ["data: 2 nouvelle(s) recette(s)"] and s.published
+    assert published == ["🍱 data: 2 nouvelle(s) recette(s)"] and s.published
     assert svc.downloader.cleaned == ["A", "B"]
 
 
@@ -339,7 +339,8 @@ def test_reextract_updates_recipe_from_sources_without_download(store):
     svc2, published, _ = services(store, FakeExtractor({"A": mp("Nouveau titre")}), downloader=dl)
     s = reextract(cfg(), svc2, None)
     assert [r.title for r in store.load_recipes()] == ["Nouveau titre"]
-    assert dl.fetched == [] and s.new_recipes == ["Nouveau titre"] and len(published) == 1
+    assert dl.fetched == [] and s.new_recipes == ["Nouveau titre"]
+    assert published == ["🍱 data: 1 recette(s) ré-extraite(s)"]
 
 
 def test_reextract_not_meal_prep_keeps_existing_recipe(store):
