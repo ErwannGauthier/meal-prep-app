@@ -1,0 +1,220 @@
+/*
+  Direction : l'étiquette nutritionnelle.
+  - Une seule famille, Archivo : étroite et très grasse pour les titres, normale pour le texte.
+  - Les seules couleurs sont celles des trois macros ; tout le reste est en encre.
+  - Rayons par rôle : étiquettes (cartes, bloc macros) 6 px, champs 8 px, puces et boutons en pilule.
+*/
+:root {
+  --bg: #edf1ee;        /* plan de travail */
+  --surface: #ffffff;   /* étiquette */
+  --ink: #14261f;       /* vert sapin très sombre */
+  --muted: #55665e;
+  --line: #cfd8d2;
+  --chip: #dfe6e1;
+  --protein: #c8402f;
+  --carbs: #e3a72f;
+  --fat: #2f6fa3;
+  --font: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12201b;
+    --surface: #1b2d26;
+    --ink: #ecf2ee;
+    --muted: #9db0a6;
+    --line: #2e443b;
+    --chip: #24392f;
+    --protein: #ee6a58;
+    --carbs: #f0bd55;
+    --fat: #62a3d6;
+    color-scheme: dark;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1rem/1.5 var(--font);
+  font-stretch: 100%;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; }
+button, input, select { font: inherit; color: inherit; }
+a { color: inherit; }
+h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+
+:focus-visible { outline: 3px solid var(--fat); outline-offset: 2px; }
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: max(16px, env(safe-area-inset-top)) 16px 32px;
+}
+
+.status, .empty { color: var(--muted); text-align: center; padding: 48px 16px; }
+.empty .btn { margin-top: 12px; }
+
+/* Titres : Archivo étroit et très gras, comme sur une étiquette */
+.masthead__title, .recipe__title, .card__title, .macros__title, .recipe__section h2 {
+  font-stretch: 68%;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.005em;
+}
+
+/* En-tête */
+.masthead { padding: 4px 0 18px; }
+.masthead__title { font-size: clamp(3rem, 17vw, 5.5rem); line-height: 0.88; }
+.masthead__sub { margin-top: 8px; color: var(--muted); }
+
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 12px; font-size: 0.85rem; }
+.legend__item { display: flex; align-items: center; gap: 6px; }
+.legend__item::before { content: ''; width: 12px; height: 12px; border-radius: 2px; }
+.legend__item--protein::before { background: var(--protein); }
+.legend__item--carbs::before { background: var(--carbs); }
+.legend__item--fat::before { background: var(--fat); }
+
+/* Barre de répartition des calories */
+.macrobar { display: flex; height: 8px; background: var(--chip); }
+.macrobar__seg { flex-basis: 0; min-width: 0; }
+.macrobar__seg--protein { background: var(--protein); }
+.macrobar__seg--carbs { background: var(--carbs); }
+.macrobar__seg--fat { background: var(--fat); }
+
+/* Boutons et puces */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-height: 46px; padding: 0 20px;
+  border: 1.5px solid var(--ink); border-radius: 999px;
+  background: transparent; color: var(--ink);
+  font-weight: 600; text-decoration: none; cursor: pointer;
+}
+.btn--primary { background: var(--ink); color: var(--bg); }
+.link {
+  background: none; border: 0; padding: 8px 0; cursor: pointer;
+  color: var(--ink); font-weight: 600;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+
+.chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  min-height: 38px; padding: 0 14px;
+  border: 1.5px solid transparent; border-radius: 999px;
+  background: var(--chip); cursor: pointer;
+}
+.chip[aria-pressed='true'], .chip--active { background: var(--ink); color: var(--bg); }
+.chip--toggle { border-color: var(--ink); background: transparent; font-weight: 600; }
+.chip__count { opacity: 0.65; font-size: 0.85em; }
+
+/* Filtres */
+.filters { display: grid; gap: 10px; margin-bottom: 20px; }
+.filters__search, .filters select {
+  width: 100%; min-height: 46px; padding: 0 14px;
+  border: 1.5px solid var(--line); border-radius: 8px; background: var(--surface);
+  font-size: 16px; /* évite le zoom automatique d'iOS */
+}
+.filters select { padding: 0 8px; text-overflow: ellipsis; }
+.filters__row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.filters__chips { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.filters__panel {
+  display: grid; gap: 14px; padding: 14px;
+  background: var(--surface); border: 1.5px solid var(--line); border-radius: 8px;
+}
+.filters__panel { max-height: min(55vh, 420px); overflow-y: auto; overscroll-behavior: contain; }
+.filters__panel .filters__search { position: sticky; top: 0; z-index: 1; }
+.filters__count { font-weight: 700; }
+.filters__none { color: var(--muted); }
+.filters__group { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.filters__group legend { width: 100%; padding: 0; margin-bottom: 6px; font-size: 0.85rem; font-weight: 700; color: var(--muted); }
+
+/* Grille de cartes : deux par ligne sur téléphone */
+.grid {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(min(160px, 45%), 1fr));
+}
+.grid > li { display: flex; }
+.card {
+  display: flex; flex-direction: column; width: 100%;
+  background: var(--surface); border: 1.5px solid var(--line); border-radius: 6px;
+  overflow: hidden; text-decoration: none;
+}
+.card:active { border-color: var(--ink); }
+.card__img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: var(--chip); }
+.card__img--empty { background: repeating-linear-gradient(135deg, var(--chip) 0 12px, var(--surface) 12px 24px); }
+.card__body { display: flex; flex-direction: column; gap: 4px; flex: 1; padding: 10px 12px 12px; }
+.card__title { font-size: 1.2rem; line-height: 1.08; }
+.card__region { font-size: 0.8rem; color: var(--muted); }
+.card__macros {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 8px;
+  margin-top: auto; padding-top: 6px; font-size: 0.82rem; font-variant-numeric: tabular-nums;
+}
+.card__protein { font-weight: 700; }
+.card__kcal { color: var(--muted); }
+
+/* Page recette */
+.recipe { max-width: 720px; display: grid; gap: 18px; }
+.recipe__back { justify-self: start; }
+.recipe__img { width: 100%; max-height: 60vh; object-fit: cover; border-radius: 6px; }
+.recipe__title { font-size: clamp(2.2rem, 10vw, 3.4rem); line-height: 0.95; }
+.recipe__meta { display: flex; flex-wrap: wrap; margin-top: -8px; color: var(--muted); }
+.recipe__meta span + span { margin-left: 12px; padding-left: 12px; border-left: 1.5px solid var(--line); }
+.recipe__reel { justify-self: start; }
+.recipe__section h2 { font-size: 1.7rem; margin-bottom: 8px; }
+
+/* Étiquette « Valeurs par portion » */
+.macros { background: var(--surface); border: 2px solid var(--ink); border-radius: 6px; padding: 12px 14px 14px; }
+.macros__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.macros__title { font-size: 1.7rem; }
+.badge { border: 1.5px solid var(--ink); border-radius: 999px; padding: 0 9px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; }
+.macros__grid { margin-top: 8px; border-top: 8px solid var(--ink); font-variant-numeric: tabular-nums; }
+.macros__row { display: flex; justify-content: space-between; align-items: baseline; padding: 7px 0; border-bottom: 1px solid var(--ink); }
+.macros__row dt { display: flex; align-items: center; gap: 8px; }
+.macros__row dd { font-weight: 700; }
+.macros__row small { font-size: 0.8em; font-weight: 600; }
+.macros__row--kcal { border-bottom-width: 4px; }
+.macros__row--kcal dt { font-weight: 800; font-size: 1.05rem; }
+.macros__row--kcal dd { font-stretch: 68%; font-weight: 800; font-size: 2.6rem; line-height: 0.9; }
+.macros__row--fat { border-bottom: 0; }
+.macros__row--protein dt::before, .macros__row--carbs dt::before, .macros__row--fat dt::before {
+  content: ''; width: 12px; height: 12px; border-radius: 2px;
+}
+.macros__row--protein dt::before { background: var(--protein); }
+.macros__row--carbs dt::before { background: var(--carbs); }
+.macros__row--fat dt::before { background: var(--fat); }
+.macros .macrobar { height: 14px; margin-top: 6px; }
+.macros__none { color: var(--muted); }
+
+/* Ingrédients par rayon */
+.aisle h3 { margin: 14px 0 2px; font-size: 0.85rem; font-weight: 700; color: var(--muted); }
+.aisle li { padding: 9px 0; border-bottom: 1px solid var(--line); }
+
+/* Étapes : une vraie séquence, donc numérotée */
+.steps { counter-reset: step; display: grid; gap: 14px; }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: baseline; }
+.steps li::before { content: counter(step); font-stretch: 68%; font-weight: 800; font-size: 1.6rem; line-height: 1; }
+
+/* Barre de partage collée en bas de l'écran */
+.share {
+  position: sticky; bottom: 0;
+  display: flex; flex-wrap: wrap; gap: 8px;
+  padding: 20px 0 max(12px, env(safe-area-inset-bottom));
+  background: linear-gradient(to bottom, transparent, var(--bg) 40%);
+}
+.share .btn { flex: 1 1 160px; }
+.share .btn:not(.btn--primary) { background: var(--bg); }
+.share__error { width: 100%; font-size: 0.85rem; font-weight: 600; }
+
+@media (min-width: 720px) {
+  .filters { grid-template-columns: 2fr 1fr 1fr; }
+  .filters__row { display: contents; }
+  .filters__chips, .filters__panel, .filters__count { grid-column: 1 / -1; }
+  .grid { gap: 16px; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+}
