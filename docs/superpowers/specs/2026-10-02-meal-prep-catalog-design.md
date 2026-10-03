@@ -185,7 +185,7 @@ python -m pipeline reextract [id]           # ré-exécute l'extraction depuis l
 
 ### 6.1 Stack
 
-Vite + React + TypeScript, React Router en mode hash (`/#/`, `/#/recette/<id>`). Conçu mobile d'abord. `base` Vite réglée sur le nom du dépôt. Balise `<meta name="robots" content="noindex">`.
+Vite + React + TypeScript, React Router en mode hash (`/#/`, `/#/recette/<id>`). Conçu mobile d'abord. `base` Vite réglée sur le nom du dépôt. Balise `<meta name="robots" content="noindex">`. Plugin frontend-design.
 
 ### 6.2 Données
 
