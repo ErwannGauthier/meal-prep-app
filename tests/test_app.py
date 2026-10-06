@@ -380,3 +380,31 @@ def test_thumbnail_survives_a_resume_without_download(store):
     svc2, _, _ = services(store, FakeExtractor({"A": mp()}), downloader=FakeDownloader(store.work_dir))
     run(cfg(), svc2)
     assert store.load_recipes()[0].thumbnail == "thumbs/A.webp"
+
+
+class SilentDownloader(FakeDownloader):
+    def fetch(self, rid):
+        self.fetched.append(rid)
+        return Download(wav=None, caption=f"caption {rid}", posted_at="2023-09-07", thumbnail=None)
+
+
+class RecordingExtractor(FakeExtractor):
+    def extract(self, caption, transcript, ingredients, regions):
+        self.transcripts = getattr(self, "transcripts", []) + [transcript]
+        return super().extract(caption, transcript, ingredients, regions)
+
+
+def test_reel_without_audio_is_extracted_from_its_caption_alone(store):
+    queue(store, "MUET")
+    extractor = RecordingExtractor({"MUET": mp("Poulet à l'orange")})
+    svc, _, _ = services(store, extractor, downloader=SilentDownloader(store.work_dir))
+
+    class NoTranscriber:
+        def transcribe(self, wav):
+            raise AssertionError("pas de transcription sans piste audio")
+
+    svc.transcriber = NoTranscriber()
+    summary = run(cfg(), svc)
+    assert summary.new_recipes == ["Poulet à l'orange"]
+    assert extractor.transcripts == [""]
+    assert store.load_source("MUET").transcript == ""

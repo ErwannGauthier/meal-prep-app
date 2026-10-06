@@ -40,7 +40,7 @@ def _iso_date(upload_date: str | None) -> str | None:
 
 @dataclass(frozen=True)
 class Download:
-    wav: Path
+    wav: Path | None   # None : le reel n'a pas de piste audio
     caption: str
     posted_at: str | None
     thumbnail: Path | None
@@ -62,11 +62,25 @@ class Downloader:
         if res.returncode != 0 and _is_blocked(res.stderr) and self.cookies and not self._use_cookies:
             self._use_cookies = True
             res = self._yt_dlp(reel_id, with_cookies=True)
-        if res.returncode != 0:
-            if _is_blocked(res.stderr):
-                raise Blocked(_last_line(res.stderr))
+        if res.returncode != 0 and _is_blocked(res.stderr):
+            raise Blocked(_last_line(res.stderr))
+
+        info_path = self.work_dir / f"{reel_id}.info.json"
+        info = json.loads(info_path.read_text(encoding="utf-8")) if info_path.exists() else {}
+        # Reel sans piste audio : yt-dlp télécharge la vidéo puis échoue à en extraire le son.
+        # Ce n'est pas une erreur, la recette peut se trouver dans la description.
+        silent = info.get("acodec") == "none"
+        if res.returncode != 0 and not silent:
             raise ReelError(f"yt-dlp : {_last_line(res.stderr)}")
 
+        return Download(
+            wav=None if silent else self._wav(reel_id),
+            caption=info.get("description") or "",
+            posted_at=_iso_date(info.get("upload_date")),
+            thumbnail=self._thumbnail(reel_id),
+        )
+
+    def _wav(self, reel_id: str) -> Path:
         raw_wav = self.work_dir / f"{reel_id}.wav"
         if not raw_wav.exists():
             raise ReelError("yt-dlp n'a pas produit de fichier audio")
@@ -77,15 +91,7 @@ class Downloader:
         raw_wav.unlink(missing_ok=True)
         if conv.returncode != 0:
             raise ReelError(f"ffmpeg (audio) : {_last_line(conv.stderr)}")
-
-        info_path = self.work_dir / f"{reel_id}.info.json"
-        info = json.loads(info_path.read_text(encoding="utf-8")) if info_path.exists() else {}
-        return Download(
-            wav=wav,
-            caption=info.get("description") or "",
-            posted_at=_iso_date(info.get("upload_date")),
-            thumbnail=self._thumbnail(reel_id),
-        )
+        return wav
 
     def probe(self, reel_id: str) -> bool:
         """Instagram répond-il pour ce reel ? Ne télécharge rien."""

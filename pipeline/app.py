@@ -174,7 +174,7 @@ def run(cfg: Config, svc: Services, *, do_publish: bool = True) -> RunSummary:
                 for dead, message in suspects:
                     _fail(state, summary, dead, f"reel inaccessible (un autre reel se télécharge) : {message}")
                 suspects = []
-                transcript = svc.transcriber.transcribe(dl.wav)
+                transcript = svc.transcriber.transcribe(dl.wav) if dl.wav else ""
                 store.save_source(SourceDoc(id=rid, caption=dl.caption, transcript=transcript, postedAt=dl.posted_at))
             _store_result(cfg, svc, state, rid, summary)
             summary.processed += 1

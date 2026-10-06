@@ -18,3 +18,7 @@ data/sources/
 # Web
 node_modules/
 web/dist/
+
+# IDE et fichiers de travail locaux
+.idea/
+liens.csv

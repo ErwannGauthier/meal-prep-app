@@ -31,8 +31,7 @@ def make_runner(ytdlp_outcomes: list) -> FakeRunner:
             item = queue.pop(0)
             if isinstance(item, CmdResult):
                 return item
-            item()
-            return ok()
+            return item() or ok()
         if args[0] == "ffmpeg":
             Path(args[-1]).write_bytes(b"out")
             return ok()
@@ -137,3 +136,39 @@ def test_probe_checks_a_reel_without_downloading_anything(dirs):
 def test_probe_is_false_when_instagram_refuses(dirs):
     work, thumbs = dirs
     assert Downloader(work, thumbs, None, FakeRunner(lambda args: fail(LOGIN))).probe("REF") is False
+
+
+SILENT = "ERROR: Postprocessing: WARNING: unable to obtain file audio codec with ffprobe"
+
+
+def silent(work: Path, rid: str):
+    """yt-dlp sur un reel sans piste audio : la vidéo et les métadonnées sont là, l'extraction audio échoue."""
+    def handler_result():
+        (work / f"{rid}.mp4").write_bytes(b"video")
+        (work / f"{rid}.info.json").write_text(
+            json.dumps({"description": "Meal prep muet", "upload_date": "20230907", "acodec": "none"})
+        )
+        (work / f"{rid}.jpg").write_bytes(b"jpg")
+        return fail(SILENT)
+    return handler_result
+
+
+def test_reel_without_audio_track_returns_caption_and_no_wav(dirs):
+    work, thumbs = dirs
+    runner = make_runner([silent(work, "ABC")])
+    d = Downloader(work, thumbs, cookies=None, runner=runner).fetch("ABC")
+    assert d.wav is None
+    assert d.caption == "Meal prep muet"
+    assert d.posted_at == "2023-09-07"
+    assert d.thumbnail == thumbs / "ABC.webp" and d.thumbnail.exists()
+
+
+def test_postprocessing_failure_with_an_audio_track_stays_a_reel_error(dirs):
+    work, thumbs = dirs
+
+    def broken():
+        (work / "ABC.info.json").write_text(json.dumps({"description": "x", "acodec": "aac"}))
+        return fail(SILENT)
+
+    with pytest.raises(ReelError):
+        Downloader(work, thumbs, None, make_runner([broken])).fetch("ABC")
