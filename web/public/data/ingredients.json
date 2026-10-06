@@ -1,1 +1,422 @@
-[]
+[
+  {
+    "id": "ail",
+    "name": "ail",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "avocat",
+    "name": "avocat",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "basilic",
+    "name": "basilic",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "beurre-de-cacahuetes",
+    "name": "beurre de cacahuète",
+    "category": "epicerie"
+  },
+  {
+    "id": "brocoli",
+    "name": "brocoli",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "cacahuetes",
+    "name": "cacahuète non salée",
+    "category": "epicerie"
+  },
+  {
+    "id": "carotte",
+    "name": "carotte",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "celeri",
+    "name": "céleri",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "champignons-de-paris",
+    "name": "champignon de Paris",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "chapelure",
+    "name": "chapelure",
+    "category": "epicerie"
+  },
+  {
+    "id": "chou-rouge",
+    "name": "chou rouge",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "citron",
+    "name": "citron",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "citron-vert",
+    "name": "citron vert",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "concentre-de-tomate",
+    "name": "concentré de tomate",
+    "category": "epicerie"
+  },
+  {
+    "id": "concombre",
+    "name": "concombre",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "coriandre",
+    "name": "coriandre",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "courgette",
+    "name": "courgette",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "curry",
+    "name": "curry",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "echalote",
+    "name": "échalote",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "epices",
+    "name": "épices",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "epinards",
+    "name": "épinard",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "farine-complete",
+    "name": "farine complète",
+    "category": "feculents"
+  },
+  {
+    "id": "gingembre",
+    "name": "gingembre",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "graines-de-sesame",
+    "name": "graines de sésame",
+    "category": "epicerie"
+  },
+  {
+    "id": "haricots-rouges",
+    "name": "haricots rouges",
+    "category": "epicerie"
+  },
+  {
+    "id": "haricots-verts",
+    "name": "haricot vert",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "huile",
+    "name": "huile",
+    "category": "epicerie"
+  },
+  {
+    "id": "huile-d-olive",
+    "name": "huile d'olive",
+    "category": "epicerie"
+  },
+  {
+    "id": "huile-de-sesame",
+    "name": "huile de sésame",
+    "category": "epicerie"
+  },
+  {
+    "id": "lait-de-coco",
+    "name": "lait de coco light",
+    "category": "epicerie"
+  },
+  {
+    "id": "legumes-wok",
+    "name": "légumes vapeur wok",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "lentilles-corail",
+    "name": "lentille corail",
+    "category": "feculents"
+  },
+  {
+    "id": "levure-de-biere",
+    "name": "levure de bière",
+    "category": "epicerie"
+  },
+  {
+    "id": "mais",
+    "name": "maïs",
+    "category": "epicerie"
+  },
+  {
+    "id": "maizena",
+    "name": "maïzena",
+    "category": "epicerie"
+  },
+  {
+    "id": "melange-mexicain",
+    "name": "mélange d'épices mexicain",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "melange-tandoori",
+    "name": "mélange d'épices tandoori",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "miel",
+    "name": "miel",
+    "category": "epicerie"
+  },
+  {
+    "id": "nouilles-chinoises",
+    "name": "nouilles chinoises",
+    "category": "feculents"
+  },
+  {
+    "id": "nouilles-de-riz",
+    "name": "nouilles de riz",
+    "category": "feculents"
+  },
+  {
+    "id": "nouilles-ramen",
+    "name": "nouilles ramen",
+    "category": "feculents"
+  },
+  {
+    "id": "oeuf",
+    "name": "oeuf",
+    "category": "produits-laitiers-oeufs"
+  },
+  {
+    "id": "oignon",
+    "name": "oignon",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "oignon-rouge",
+    "name": "oignon rouge",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "oignons-jeunes",
+    "name": "oignon jeune",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "orange",
+    "name": "orange",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "origan",
+    "name": "origan",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "paprika",
+    "name": "paprika",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "parmesan",
+    "name": "parmesan",
+    "category": "produits-laitiers-oeufs"
+  },
+  {
+    "id": "patate-douce",
+    "name": "patate douce",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "pate-de-tamarin",
+    "name": "pâte de tamarin",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "pates-completes",
+    "name": "pâtes complètes",
+    "category": "feculents"
+  },
+  {
+    "id": "persil",
+    "name": "persil",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "petits-pois",
+    "name": "petits pois",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "petits-suisses",
+    "name": "petit suisse",
+    "category": "produits-laitiers-oeufs"
+  },
+  {
+    "id": "piment",
+    "name": "piment",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "pois-chiches",
+    "name": "pois chiche",
+    "category": "epicerie"
+  },
+  {
+    "id": "poivre",
+    "name": "poivre",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "poivron-jaune",
+    "name": "poivron jaune",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "poivron-rouge",
+    "name": "poivron rouge",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "poivron-vert",
+    "name": "poivron vert",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "poivrons-surgeles",
+    "name": "poivron surgelé",
+    "category": "surgeles"
+  },
+  {
+    "id": "pommes-de-terre",
+    "name": "pomme de terre",
+    "category": "feculents"
+  },
+  {
+    "id": "poulet",
+    "name": "poulet",
+    "category": "viandes-poissons"
+  },
+  {
+    "id": "pousses-de-soja",
+    "name": "pousses de soja",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "pulpe-de-tomate",
+    "name": "pulpe de tomate",
+    "category": "epicerie"
+  },
+  {
+    "id": "riz",
+    "name": "riz basmati",
+    "category": "feculents"
+  },
+  {
+    "id": "salade",
+    "name": "salade",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "sauce-aigre-douce",
+    "name": "sauce aigre-douce",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "sauce-barbecue",
+    "name": "sauce barbecue",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "sauce-hoisin",
+    "name": "sauce hoisin",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "sauce-pesto",
+    "name": "sauce pesto verde",
+    "category": "epicerie"
+  },
+  {
+    "id": "sauce-piquante",
+    "name": "sauce piquante",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "sauce-satay",
+    "name": "sauce satay",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "sauce-soja",
+    "name": "sauce soja",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "sauce-teriyaki",
+    "name": "sauce teriyaki",
+    "category": "epicerie"
+  },
+  {
+    "id": "sauce-tomate",
+    "name": "sauce tomate",
+    "category": "epicerie"
+  },
+  {
+    "id": "saumon",
+    "name": "saumon",
+    "category": "viandes-poissons"
+  },
+  {
+    "id": "sel",
+    "name": "sel",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "sirop-d-erable",
+    "name": "sirop d'érable",
+    "category": "epicerie"
+  },
+  {
+    "id": "tomate",
+    "name": "tomate",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "viande-hachee",
+    "name": "viande hachée 5%",
+    "category": "viandes-poissons"
+  },
+  {
+    "id": "vinaigre-de-riz",
+    "name": "vinaigre de riz",
+    "category": "epicerie"
+  },
+  {
+    "id": "wraps",
+    "name": "wrap",
+    "category": "feculents"
+  }
+]
