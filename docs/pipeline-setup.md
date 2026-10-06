@@ -14,7 +14,7 @@ Vérifier que la carte est vue en Vulkan :
 vulkaninfo --summary | grep -i deviceName
 ```
 
-Il faut voir `AMD Radeon RX 7800 XT (RADV ...)`. Si seule `llvmpipe` apparaît, installer un Mesa plus récent :
+Il faut voir la carte avec le pilote RADV, par exemple `AMD Radeon Graphics (RADV GFX1101)` (le nom commercial n'apparaît pas forcément). Si seule `llvmpipe` apparaît, installer un Mesa plus récent :
 
 ```bash
 echo "deb http://deb.debian.org/debian bookworm-backports main" | sudo tee /etc/apt/sources.list.d/backports.list
@@ -25,17 +25,35 @@ Si la carte n'apparaît toujours pas, mettre `use_gpu = false` dans `config.toml
 
 ## 2. whisper.cpp
 
+Les en-têtes Vulkan de Debian 12 (1.3.239) sont trop anciens pour le backend Vulkan de whisper.cpp (erreur `'LayerSettingEXT' is not a member of 'vk'`), et les en-têtes SPIR-V ne sont pas installés (erreur `Could not find ... "SPIRV-Headers"`). On installe donc des versions récentes des deux dans `~/.local`, sans toucher au système. Ce ne sont que des en-têtes : la bibliothèque Vulkan et le pilote restent ceux de Debian.
+
+```bash
+git clone --depth 1 https://github.com/KhronosGroup/SPIRV-Headers /tmp/SPIRV-Headers
+cmake -S /tmp/SPIRV-Headers -B /tmp/SPIRV-Headers/build -DCMAKE_INSTALL_PREFIX=$HOME/.local
+cmake --install /tmp/SPIRV-Headers/build
+
+git clone --depth 1 https://github.com/KhronosGroup/Vulkan-Headers /tmp/Vulkan-Headers
+cmake -S /tmp/Vulkan-Headers -B /tmp/Vulkan-Headers/build \
+  -DCMAKE_INSTALL_PREFIX=$HOME/.local -DVULKAN_HEADERS_ENABLE_MODULE=OFF
+cmake --install /tmp/Vulkan-Headers/build
+```
+
+Puis whisper.cpp, en pointant cmake sur ces en-têtes :
+
 ```bash
 git clone https://github.com/ggml-org/whisper.cpp ~/whisper.cpp
 cd ~/whisper.cpp
-cmake -B build -DGGML_VULKAN=1 -DCMAKE_BUILD_TYPE=Release
+cmake -B build -DGGML_VULKAN=1 -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_PREFIX_PATH=$HOME/.local \
+  -DVulkan_INCLUDE_DIR=$HOME/.local/include \
+  -DCMAKE_CXX_FLAGS=-I$HOME/.local/include
 cmake --build build -j --config Release
 sh ./models/download-ggml-model.sh large-v3-turbo
 sh ./models/download-ggml-model.sh small
 ./build/bin/whisper-cli -m models/ggml-large-v3-turbo.bin -f samples/jfk.wav
 ```
 
-Dans la sortie, une ligne `ggml_vulkan: ... AMD Radeon RX 7800 XT` confirme l'utilisation du GPU.
+Dans la sortie, les lignes `ggml_vulkan: 0 = AMD Radeon Graphics (RADV ...)` et `whisper_backend_init_gpu: using Vulkan0 backend` confirment l'utilisation du GPU. Vérifié le 2026-10-06 sur ce PC : l'échantillon est transcrit en 8 s environ.
 
 ## 3. Claude Code
 
