@@ -20,6 +20,11 @@
     "category": "fruits-legumes"
   },
   {
+    "id": "anis-etoile",
+    "name": "anis étoilé",
+    "category": "epices-condiments"
+  },
+  {
     "id": "asperges",
     "name": "asperge verte",
     "category": "fruits-legumes"
@@ -63,6 +68,11 @@
     "id": "cacahuetes",
     "name": "cacahuète non salée",
     "category": "epicerie"
+  },
+  {
+    "id": "cancoillotte",
+    "name": "cancoillotte",
+    "category": "produits-laitiers-oeufs"
   },
   {
     "id": "cannelle",
@@ -315,6 +325,11 @@
     "category": "feculents"
   },
   {
+    "id": "levure",
+    "name": "levure boulangère",
+    "category": "epicerie"
+  },
+  {
     "id": "levure-de-biere",
     "name": "levure de bière",
     "category": "epicerie"
@@ -332,6 +347,11 @@
   {
     "id": "mayonnaise-allegee",
     "name": "mayonnaise allégée",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "melange-fajitas",
+    "name": "mélange d'épices fajitas",
     "category": "epices-condiments"
   },
   {
@@ -425,6 +445,11 @@
     "category": "feculents"
   },
   {
+    "id": "pak-choi",
+    "name": "pak choi",
+    "category": "fruits-legumes"
+  },
+  {
     "id": "paprika",
     "name": "paprika",
     "category": "epices-condiments"
@@ -442,6 +467,11 @@
   {
     "id": "pate-de-curry",
     "name": "pâte de curry",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "pate-de-piment",
+    "name": "pâte de piment",
     "category": "epices-condiments"
   },
   {
@@ -693,6 +723,11 @@
     "id": "tomates-sechees",
     "name": "tomate séchée",
     "category": "epicerie"
+  },
+  {
+    "id": "udon",
+    "name": "nouilles udon",
+    "category": "feculents"
   },
   {
     "id": "viande-hachee",
