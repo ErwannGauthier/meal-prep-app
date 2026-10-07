@@ -105,6 +105,11 @@
     "category": "viandes-poissons"
   },
   {
+    "id": "chou-blanc",
+    "name": "chou blanc",
+    "category": "fruits-legumes"
+  },
+  {
     "id": "chou-rouge",
     "name": "chou rouge",
     "category": "fruits-legumes"
@@ -207,6 +212,16 @@
   {
     "id": "fromage-allege",
     "name": "fromage allégé en tranches",
+    "category": "produits-laitiers-oeufs"
+  },
+  {
+    "id": "fromage-blanc",
+    "name": "fromage blanc",
+    "category": "produits-laitiers-oeufs"
+  },
+  {
+    "id": "fromage-hyperproteine",
+    "name": "fromage hyperprotéiné",
     "category": "produits-laitiers-oeufs"
   },
   {
@@ -455,6 +470,11 @@
     "category": "fruits-legumes"
   },
   {
+    "id": "pesto-rosso",
+    "name": "pesto rosso",
+    "category": "epices-condiments"
+  },
+  {
     "id": "petits-pois",
     "name": "petits pois",
     "category": "fruits-legumes"
@@ -615,6 +635,11 @@
     "category": "epicerie"
   },
   {
+    "id": "sauce-tikka-masala",
+    "name": "sauce tikka masala",
+    "category": "epices-condiments"
+  },
+  {
     "id": "sauce-tomate",
     "name": "sauce tomate",
     "category": "epicerie"
@@ -648,6 +673,11 @@
     "id": "sriracha",
     "name": "sriracha",
     "category": "epices-condiments"
+  },
+  {
+    "id": "thon",
+    "name": "thon",
+    "category": "viandes-poissons"
   },
   {
     "id": "thym",
