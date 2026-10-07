@@ -5,6 +5,16 @@
     "category": "fruits-legumes"
   },
   {
+    "id": "ail-en-poudre",
+    "name": "ail en poudre",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "amandes",
+    "name": "amande",
+    "category": "epicerie"
+  },
+  {
     "id": "aneth",
     "name": "aneth",
     "category": "fruits-legumes"
@@ -30,6 +40,16 @@
     "category": "epicerie"
   },
   {
+    "id": "boeuf",
+    "name": "bœuf",
+    "category": "viandes-poissons"
+  },
+  {
+    "id": "bouillon-de-volaille",
+    "name": "cube de bouillon de volaille",
+    "category": "epices-condiments"
+  },
+  {
     "id": "boulgour",
     "name": "boulgour",
     "category": "feculents"
@@ -43,6 +63,11 @@
     "id": "cacahuetes",
     "name": "cacahuète non salée",
     "category": "epicerie"
+  },
+  {
+    "id": "cannelle",
+    "name": "cannelle",
+    "category": "epices-condiments"
   },
   {
     "id": "carotte",
@@ -75,8 +100,18 @@
     "category": "produits-laitiers-oeufs"
   },
   {
+    "id": "chorizo",
+    "name": "chorizo",
+    "category": "viandes-poissons"
+  },
+  {
     "id": "chou-rouge",
     "name": "chou rouge",
+    "category": "fruits-legumes"
+  },
+  {
+    "id": "ciboulette",
+    "name": "ciboulette",
     "category": "fruits-legumes"
   },
   {
@@ -88,6 +123,11 @@
     "id": "citron-vert",
     "name": "citron vert",
     "category": "fruits-legumes"
+  },
+  {
+    "id": "coco-rapee",
+    "name": "noix de coco râpée",
+    "category": "epicerie"
   },
   {
     "id": "concentre-de-tomate",
@@ -113,6 +153,11 @@
     "id": "courgette",
     "name": "courgette",
     "category": "fruits-legumes"
+  },
+  {
+    "id": "creme-legere",
+    "name": "crème légère 4%",
+    "category": "produits-laitiers-oeufs"
   },
   {
     "id": "cumin",
@@ -190,6 +235,11 @@
     "category": "fruits-legumes"
   },
   {
+    "id": "herbes-de-provence",
+    "name": "herbes de Provence",
+    "category": "epices-condiments"
+  },
+  {
     "id": "huile",
     "name": "huile",
     "category": "epicerie"
@@ -228,6 +278,11 @@
     "id": "lait-de-coco",
     "name": "lait de coco light",
     "category": "epicerie"
+  },
+  {
+    "id": "legumes-au-choix",
+    "name": "légumes au choix",
+    "category": "fruits-legumes"
   },
   {
     "id": "legumes-wok",
@@ -295,6 +350,11 @@
     "category": "produits-laitiers-oeufs"
   },
   {
+    "id": "noix-de-cajou",
+    "name": "noix de cajou non salée",
+    "category": "epicerie"
+  },
+  {
     "id": "nouilles-chinoises",
     "name": "nouilles chinoises",
     "category": "feculents"
@@ -302,6 +362,11 @@
   {
     "id": "nouilles-de-riz",
     "name": "nouilles de riz",
+    "category": "feculents"
+  },
+  {
+    "id": "nouilles-instantanees",
+    "name": "sachet de nouilles instantanées",
     "category": "feculents"
   },
   {
@@ -360,9 +425,24 @@
     "category": "fruits-legumes"
   },
   {
+    "id": "pate-de-curry",
+    "name": "pâte de curry",
+    "category": "epices-condiments"
+  },
+  {
     "id": "pate-de-tamarin",
     "name": "pâte de tamarin",
     "category": "epices-condiments"
+  },
+  {
+    "id": "pates",
+    "name": "pâtes",
+    "category": "feculents"
+  },
+  {
+    "id": "pates-a-lasagnes",
+    "name": "pâtes à lasagnes",
+    "category": "feculents"
   },
   {
     "id": "pates-completes",
@@ -383,6 +463,11 @@
     "id": "petits-suisses",
     "name": "petit suisse",
     "category": "produits-laitiers-oeufs"
+  },
+  {
+    "id": "pignons-de-pin",
+    "name": "pignon de pin",
+    "category": "epicerie"
   },
   {
     "id": "piment",
@@ -510,6 +595,11 @@
     "category": "epices-condiments"
   },
   {
+    "id": "sauce-poisson",
+    "name": "sauce poisson",
+    "category": "epices-condiments"
+  },
+  {
     "id": "sauce-satay",
     "name": "sauce satay",
     "category": "epices-condiments"
@@ -560,9 +650,19 @@
     "category": "epices-condiments"
   },
   {
+    "id": "thym",
+    "name": "thym",
+    "category": "epices-condiments"
+  },
+  {
     "id": "tomate",
     "name": "tomate",
     "category": "fruits-legumes"
+  },
+  {
+    "id": "tomates-sechees",
+    "name": "tomate séchée",
+    "category": "epicerie"
   },
   {
     "id": "viande-hachee",
