@@ -1,5 +1,3492 @@
 [
   {
+    "title": "Nouilles sautées au bœuf et meatballs au parmesan",
+    "region": null,
+    "portions": 6,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de viande hachée 5%"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 2.0,
+        "unit": "pièce",
+        "raw": "2 oignons"
+      },
+      {
+        "ingredientId": "echalote",
+        "quantity": null,
+        "unit": null,
+        "raw": "Échalote"
+      },
+      {
+        "ingredientId": "poivron-rouge",
+        "quantity": 300.0,
+        "unit": "g",
+        "raw": "300 g de poivrons rouges"
+      },
+      {
+        "ingredientId": "spaghetti",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de spaghetti"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 8.0,
+        "unit": "pièce",
+        "raw": "8 œufs"
+      },
+      {
+        "ingredientId": "sauce-tomate",
+        "quantity": 400.0,
+        "unit": "ml",
+        "raw": "400 ml de sauce tomate"
+      },
+      {
+        "ingredientId": "concentre-de-tomate",
+        "quantity": null,
+        "unit": null,
+        "raw": "Concentré de tomate"
+      },
+      {
+        "ingredientId": "basilic",
+        "quantity": null,
+        "unit": null,
+        "raw": "Basilic"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce soja"
+      },
+      {
+        "ingredientId": "sauce-huitre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce huître"
+      },
+      {
+        "ingredientId": "sriracha",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce sriracha (si tu aimes épicé)"
+      },
+      {
+        "ingredientId": "parmesan",
+        "quantity": 60.0,
+        "unit": "g",
+        "raw": "60 g de parmesan"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Coupe les poivrons, les oignons et les échalotes en fines lamelles.",
+      "Fais cuire les spaghetti puis égoutte-les.",
+      "Divise la viande hachée en deux et fais cuire les échalotes et les oignons dans deux poêles.",
+      "Dans la première poêle, ajoute les poivrons, puis les œufs.",
+      "Assaisonne avec la sauce soja, la sauce huître et la sriracha, puis ajoute une partie des spaghetti pour les nouilles sautées au bœuf.",
+      "Dans l'autre poêle, ajoute la sauce tomate, le sel, le poivre, le basilic et le concentré de tomate.",
+      "Ajoute le reste des spaghetti et le parmesan, puis mélange bien.",
+      "Répartis dans six boîtes : trois de nouilles sautées au bœuf et trois de meatballs au parmesan."
+    ],
+    "macros": {
+      "kcal": 781,
+      "protein": 74,
+      "carbs": 75,
+      "fat": 20,
+      "source": "announced"
+    },
+    "id": "DC96vpgsw-c",
+    "url": "https://www.instagram.com/reel/DC96vpgsw-c/",
+    "postedAt": "2024-11-29",
+    "thumbnail": "thumbs/DC96vpgsw-c.webp",
+    "extractedAt": "2026-10-07T17:52:42Z"
+  },
+  {
+    "title": "Poulet fajitas et poulet curry, riz et haricots rouges",
+    "region": null,
+    "portions": 6,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1200.0,
+        "unit": "g",
+        "raw": "1,2 kg de poulet"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 2.0,
+        "unit": "pièce",
+        "raw": "2 oignons"
+      },
+      {
+        "ingredientId": "poivron",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poivrons"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati"
+      },
+      {
+        "ingredientId": "petits-suisses",
+        "quantity": 360.0,
+        "unit": "g",
+        "raw": "360 g de petits suisses"
+      },
+      {
+        "ingredientId": "haricots-rouges",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de haricots rouges"
+      },
+      {
+        "ingredientId": "pulpe-de-tomate",
+        "quantity": 800.0,
+        "unit": "g",
+        "raw": "800 g de pulpe de tomate"
+      },
+      {
+        "ingredientId": "curry",
+        "quantity": null,
+        "unit": null,
+        "raw": "Curry"
+      },
+      {
+        "ingredientId": "garam-masala",
+        "quantity": null,
+        "unit": null,
+        "raw": "Garam masala"
+      },
+      {
+        "ingredientId": "melange-mexicain",
+        "quantity": null,
+        "unit": null,
+        "raw": "Assaisonnement fajitas ou chili (ou paprika, cumin, curcuma)"
+      },
+      {
+        "ingredientId": "persil",
+        "quantity": null,
+        "unit": null,
+        "raw": "Persil"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Découpe le poulet en morceaux et sépare-le en deux.",
+      "Assaisonne une moitié avec sel, poivre, curry et garam masala.",
+      "Assaisonne l'autre moitié avec sel, mélange fajitas et ail.",
+      "Fais cuire le poulet 16 minutes à l'air fryer à 180 °C, ou à la poêle.",
+      "Mixe au blender la pulpe de tomate avec un oignon, de l'ail et les épices utilisées pour le poulet.",
+      "Fais cuire les poivrons dans deux poêles séparées.",
+      "Ajoute le deuxième oignon dans une poêle, puis la sauce tomate avec les haricots rouges.",
+      "Ajoute la sauce et les petits suisses dans l'autre poêle.",
+      "Verse chaque poulet dans sa poêle et mélange.",
+      "Cuis le riz et répartis-le dans 6 boîtes avec les deux poulets.",
+      "Termine avec du persil."
+    ],
+    "macros": {
+      "kcal": 680,
+      "protein": 75,
+      "carbs": 72,
+      "fat": 10,
+      "source": "announced"
+    },
+    "id": "DCr6L4Ischd",
+    "url": "https://www.instagram.com/reel/DCr6L4Ischd/",
+    "postedAt": "2024-11-22",
+    "thumbnail": "thumbs/DCr6L4Ischd.webp",
+    "extractedAt": "2026-10-07T17:50:56Z"
+  },
+  {
+    "title": "Nouilles au poulet, sauce beurre de cacahuète",
+    "region": "Asie de l'Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon"
+      },
+      {
+        "ingredientId": "brocoli",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de brocoli"
+      },
+      {
+        "ingredientId": "nouilles-chinoises",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de nouilles chinoises"
+      },
+      {
+        "ingredientId": "proteines-de-soja",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de protéines de soja texturées"
+      },
+      {
+        "ingredientId": "beurre-de-cacahuetes",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de beurre de cacahuète"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce soja"
+      },
+      {
+        "ingredientId": "sriracha",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce sriracha"
+      },
+      {
+        "ingredientId": "miel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Miel (optionnel)"
+      },
+      {
+        "ingredientId": "huile",
+        "quantity": null,
+        "unit": null,
+        "raw": "Huile"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Découpez le poulet et assaisonnez-le avec sel, poivre, huile, ail, sauce soja et un peu de miel.",
+      "Mélangez bien et faites cuire le poulet 8 à 10 minutes à la poêle, jusqu'à ce qu'il soit imbibé de marinade.",
+      "Dans la même poêle, mélangez le beurre de cacahuète, de la sauce soja et de l'huile jusqu'à obtenir une pâte épaisse.",
+      "Faites cuire les protéines de soja et les nouilles.",
+      "Versez un verre d'eau dans la sauce et mélangez pour la rendre crémeuse.",
+      "Ajoutez les nouilles, le poulet et les protéines de soja à la sauce.",
+      "Plongez les brocolis 2 minutes dans l'eau bouillante.",
+      "Faites revenir l'oignon à la poêle jusqu'à caramélisation, puis ajoutez les brocolis avec sel, poivre et un peu de sauce soja.",
+      "Répartissez les nouilles au poulet et les légumes dans 5 boîtes, avec la sriracha en topping."
+    ],
+    "macros": {
+      "kcal": 790,
+      "protein": 86,
+      "carbs": 70,
+      "fat": 19,
+      "source": "announced"
+    },
+    "id": "DCZ39MtMQ0N",
+    "url": "https://www.instagram.com/reel/DCZ39MtMQ0N/",
+    "postedAt": "2024-11-15",
+    "thumbnail": "thumbs/DCZ39MtMQ0N.webp",
+    "extractedAt": "2026-10-07T17:49:31Z"
+  },
+  {
+    "title": "Spaghetti bolognaise hyperprotéinée",
+    "region": "Italie",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de viande hachée 5%"
+      },
+      {
+        "ingredientId": "spaghetti",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de spaghetti"
+      },
+      {
+        "ingredientId": "carotte",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de carottes"
+      },
+      {
+        "ingredientId": "celeri",
+        "quantity": null,
+        "unit": null,
+        "raw": "Du céleri"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon"
+      },
+      {
+        "ingredientId": "echalote",
+        "quantity": null,
+        "unit": null,
+        "raw": "Échalote"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "sauce-tomate",
+        "quantity": 800.0,
+        "unit": "g",
+        "raw": "800 g de sauce tomate"
+      },
+      {
+        "ingredientId": "concentre-de-tomate",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de concentré de tomate"
+      },
+      {
+        "ingredientId": "petits-suisses",
+        "quantity": 240.0,
+        "unit": "g",
+        "raw": "240 g de petits suisses"
+      },
+      {
+        "ingredientId": "parmesan",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de parmesan"
+      },
+      {
+        "ingredientId": "huile",
+        "quantity": null,
+        "unit": null,
+        "raw": "Huile"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "basilic",
+        "quantity": null,
+        "unit": null,
+        "raw": "Basilic (optionnel)"
+      },
+      {
+        "ingredientId": "origan",
+        "quantity": null,
+        "unit": null,
+        "raw": "Origan (optionnel)"
+      }
+    ],
+    "steps": [
+      "Assaisonne la viande hachée avec l'huile, le sel et le poivre.",
+      "Coupe l'échalote et mélange-la à la viande.",
+      "Fais cuire la viande à feu vif dans une poêle jusqu'à ce qu'elle soit dorée.",
+      "Coupe l'oignon, le céleri et les carottes.",
+      "Fais revenir les légumes dans une poêle jusqu'à ce qu'ils ramollissent.",
+      "Ajoute l'ail, puis la sauce tomate et le concentré de tomate.",
+      "Ajoute sel et poivre, puis mélange bien.",
+      "Incorpore les petits suisses pour rendre la sauce crémeuse.",
+      "Ajoute le basilic et l'origan, puis la viande.",
+      "Laisse mijoter à feu doux pendant la cuisson des pâtes.",
+      "Répartis les pâtes et la sauce dans les boîtes.",
+      "Ajoute 20 g de parmesan par portion."
+    ],
+    "macros": {
+      "kcal": 750,
+      "protein": 76,
+      "carbs": 80,
+      "fat": 14,
+      "source": "announced"
+    },
+    "id": "DCH1_ayMp1k",
+    "url": "https://www.instagram.com/reel/DCH1_ayMp1k/",
+    "postedAt": "2024-11-08",
+    "thumbnail": "thumbs/DCH1_ayMp1k.webp",
+    "extractedAt": "2026-10-07T17:47:45Z"
+  },
+  {
+    "title": "Poulet teriyaki et riz cantonais",
+    "region": "Asie de l'Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon"
+      },
+      {
+        "ingredientId": "carotte",
+        "quantity": 400.0,
+        "unit": "g",
+        "raw": "400 g de carottes"
+      },
+      {
+        "ingredientId": "petits-pois",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de petits pois"
+      },
+      {
+        "ingredientId": "jambon",
+        "quantity": 150.0,
+        "unit": "g",
+        "raw": "150 g de dés de jambon (ou de poulet)"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 6.0,
+        "unit": "pièce",
+        "raw": "6 oeufs"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce soja"
+      },
+      {
+        "ingredientId": "sauce-aigre-douce",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce aigre-douce (ou miel)"
+      },
+      {
+        "ingredientId": "sauce-teriyaki",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce teriyaki"
+      },
+      {
+        "ingredientId": "huile",
+        "quantity": null,
+        "unit": null,
+        "raw": "Huile"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Assaisonne le poulet avec le sel, l'huile, le poivre et l'ail, puis mélange.",
+      "Cuis le poulet 16 minutes à l'air fryer ou à la poêle.",
+      "Verse dans une poêle l'huile, la sauce soja, la sauce teriyaki et la sauce aigre-douce (ou du miel).",
+      "Laisse caraméliser, puis enrobe le poulet de sauce et effiloche-le avec des baguettes.",
+      "Fais cuire le riz.",
+      "Fais revenir les oignons dans une poêle, puis ajoute les carottes coupées en petits morceaux.",
+      "Ajoute le jambon, les petits pois et un peu de sauce soja.",
+      "Creuse un trou au centre, ajoute les oeufs et brouille-les.",
+      "Ajoute sel et poivre, puis mélange.",
+      "Répartis le riz cantonais et 200 g de poulet dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 782,
+      "protein": 81,
+      "carbs": 85,
+      "fat": 13,
+      "source": "announced"
+    },
+    "id": "DB10hkOsa6a",
+    "url": "https://www.instagram.com/reel/DB10hkOsa6a/",
+    "postedAt": "2024-11-01",
+    "thumbnail": "thumbs/DB10hkOsa6a.webp",
+    "extractedAt": "2026-10-07T17:45:47Z"
+  },
+  {
+    "title": "Bibimbap express à la viande hachée",
+    "region": "Asie de l'Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de viande hachée 5%"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon"
+      },
+      {
+        "ingredientId": "carotte",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de carottes râpées"
+      },
+      {
+        "ingredientId": "courgette",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 grosse courgette"
+      },
+      {
+        "ingredientId": "epinards",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g d'épinards"
+      },
+      {
+        "ingredientId": "champignons-de-paris",
+        "quantity": 150.0,
+        "unit": "g",
+        "raw": "150 g de champignons"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 10.0,
+        "unit": "pièce",
+        "raw": "10 oeufs"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati"
+      },
+      {
+        "ingredientId": "graines-de-sesame",
+        "quantity": null,
+        "unit": null,
+        "raw": "Graines de sésame"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce soja"
+      },
+      {
+        "ingredientId": "sauce-bulgogi",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce bibimbap ou bulgogi"
+      },
+      {
+        "ingredientId": "huile-d-olive",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu d'huile d'olive ou de sésame"
+      },
+      {
+        "ingredientId": "miel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de miel"
+      },
+      {
+        "ingredientId": "pousses-de-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Pousses de soja"
+      }
+    ],
+    "steps": [
+      "Cuire le riz basmati.",
+      "Mélanger la sauce bibimbap, la sauce soja, l'huile, le miel, l'ail et les graines de sésame pour obtenir une sauce qui sert de marinade.",
+      "Couper l'oignon et le faire caraméliser.",
+      "Ajouter la viande hachée et cuire 5 à 7 minutes, jusqu'à ce qu'elle change de couleur.",
+      "Verser la sauce et cuire à feu doux pour que la viande s'imprègne et caramélise.",
+      "Faire cuire la courgette en rondelles dans une poêle avec un peu de sauce soja.",
+      "Ajouter les épinards, les carottes râpées et les champignons, puis mélanger.",
+      "Ajouter les pousses de soja pour le croquant.",
+      "Cuire les oeufs au plat.",
+      "Répartir le riz, les légumes et la viande dans 5 contenants.",
+      "Poser les oeufs sur le dessus et ajouter un peu de sauce."
+    ],
+    "macros": {
+      "kcal": 768,
+      "protein": 76,
+      "carbs": 80,
+      "fat": 16,
+      "source": "announced"
+    },
+    "id": "DBjqpVLIQXo",
+    "url": "https://www.instagram.com/reel/DBjqpVLIQXo/",
+    "postedAt": "2024-10-25",
+    "thumbnail": "thumbs/DBjqpVLIQXo.webp",
+    "extractedAt": "2026-10-07T17:44:05Z"
+  },
+  {
+    "title": "Shawarma de poulet, frites de pommes de terre et sauce yaourt",
+    "region": "Turquie",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "pommes-de-terre",
+        "quantity": 1.5,
+        "unit": "kg",
+        "raw": "1,5 kg de pommes de terre"
+      },
+      {
+        "ingredientId": "tomate",
+        "quantity": null,
+        "unit": null,
+        "raw": "Des tomates"
+      },
+      {
+        "ingredientId": "concombre",
+        "quantity": 2.0,
+        "unit": "pièce",
+        "raw": "2 concombres"
+      },
+      {
+        "ingredientId": "oignon-rouge",
+        "quantity": 2.0,
+        "unit": "pièce",
+        "raw": "2 oignons rouges"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": 1.0,
+        "unit": "gousse",
+        "raw": "1 gousse d'ail"
+      },
+      {
+        "ingredientId": "citron",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 citron"
+      },
+      {
+        "ingredientId": "persil",
+        "quantity": null,
+        "unit": null,
+        "raw": "Du persil"
+      },
+      {
+        "ingredientId": "huile-d-olive",
+        "quantity": 30.0,
+        "unit": "g",
+        "raw": "30 g d'huile d'olive"
+      },
+      {
+        "ingredientId": "petits-suisses",
+        "quantity": 360.0,
+        "unit": "g",
+        "raw": "360 g de petits suisses"
+      },
+      {
+        "ingredientId": "mayonnaise-allegee",
+        "quantity": null,
+        "unit": null,
+        "raw": "Mayonnaise allégée"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika"
+      },
+      {
+        "ingredientId": "cumin",
+        "quantity": null,
+        "unit": null,
+        "raw": "Cumin"
+      },
+      {
+        "ingredientId": "curcuma",
+        "quantity": null,
+        "unit": null,
+        "raw": "Curcuma"
+      },
+      {
+        "ingredientId": "miel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de miel"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Coupe le poulet en morceaux et mélange-le avec le paprika, le cumin et le curcuma.",
+      "Fais cuire le poulet 16 minutes à la poêle ou à l'air fryer à 200°.",
+      "Coupe les pommes de terre en frites et fais-les cuire.",
+      "Hache finement les concombres, les tomates et les oignons rouges.",
+      "Mélange les légumes dans une grande poêle, assaisonne avec sel, poivre, huile d'olive et un peu de miel.",
+      "Ajoute le persil et mélange bien.",
+      "Prépare la sauce : mélange le reste des petits suisses, sel, poivre, mayonnaise allégée, persil et ail.",
+      "Presse le citron dans la sauce.",
+      "Répartis le poulet, les frites, la salade et la sauce dans les boîtes."
+    ],
+    "macros": {
+      "kcal": 705,
+      "protein": 69,
+      "carbs": 65,
+      "fat": 19,
+      "source": "announced"
+    },
+    "id": "DBRn8OWIP06",
+    "url": "https://www.instagram.com/reel/DBRn8OWIP06/",
+    "postedAt": "2024-10-18",
+    "thumbnail": "thumbs/DBRn8OWIP06.webp",
+    "extractedAt": "2026-10-07T17:42:15Z"
+  },
+  {
+    "title": "Tchatchouka algérienne au poulet et riz",
+    "region": "Algérie",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 petit oignon"
+      },
+      {
+        "ingredientId": "poivron-rouge",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de poivron rouge"
+      },
+      {
+        "ingredientId": "poivron-vert",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de poivron vert"
+      },
+      {
+        "ingredientId": "poivron-jaune",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de poivron jaune"
+      },
+      {
+        "ingredientId": "piment",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 piment vert (optionnel)"
+      },
+      {
+        "ingredientId": "persil",
+        "quantity": null,
+        "unit": null,
+        "raw": "Persil"
+      },
+      {
+        "ingredientId": "feta",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de feta allégée (optionnel)"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 5.0,
+        "unit": "pièce",
+        "raw": "5 oeufs"
+      },
+      {
+        "ingredientId": "pulpe-de-tomate",
+        "quantity": 800.0,
+        "unit": "g",
+        "raw": "800 g de pulpe de tomate"
+      },
+      {
+        "ingredientId": "concentre-de-tomate",
+        "quantity": null,
+        "unit": null,
+        "raw": "Concentré de tomate"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati"
+      },
+      {
+        "ingredientId": "huile-d-olive",
+        "quantity": 30.0,
+        "unit": "g",
+        "raw": "30 g d'huile d'olive"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "cumin",
+        "quantity": null,
+        "unit": null,
+        "raw": "Cumin"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika"
+      },
+      {
+        "ingredientId": "curcuma",
+        "quantity": null,
+        "unit": null,
+        "raw": "Curcuma"
+      }
+    ],
+    "steps": [
+      "Assaisonne le poulet avec l'huile d'olive, le sel, le poivre, le cumin, le paprika, le curcuma et l'ail.",
+      "Fais cuire le poulet 16 minutes à la poêle ou à l'Air Fryer à 200 °C.",
+      "Coupe l'oignon et fais-le revenir dans une poêle.",
+      "Coupe les poivrons en petits morceaux et ajoute-les à l'oignon.",
+      "Laisse cuire jusqu'à ce que les légumes soient bien fondants.",
+      "Ajoute la pulpe de tomate et les mêmes épices que pour le poulet, puis mélange.",
+      "Incorpore le concentré de tomate, le persil et le piment.",
+      "Creuse des trous dans la préparation avec une grosse cuillère et casse un oeuf dans chacun.",
+      "Couvre et laisse cuire les oeufs à l'étouffée.",
+      "Cuis le riz basmati.",
+      "Répartis le riz, la tchatchouka et le poulet dans les boîtes, puis dépose les oeufs et la feta sur le dessus."
+    ],
+    "macros": {
+      "kcal": 760,
+      "protein": 80,
+      "carbs": 65,
+      "fat": 20,
+      "source": "announced"
+    },
+    "id": "DA_kRQUo0fa",
+    "url": "https://www.instagram.com/reel/DA_kRQUo0fa/",
+    "postedAt": "2024-10-11",
+    "thumbnail": "thumbs/DA_kRQUo0fa.webp",
+    "extractedAt": "2026-10-07T17:40:24Z"
+  },
+  {
+    "title": "Poulet et pâtes au pesto pistache",
+    "region": "Italie",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon"
+      },
+      {
+        "ingredientId": "epinards",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g d'épinards"
+      },
+      {
+        "ingredientId": "petits-suisses",
+        "quantity": 360.0,
+        "unit": "g",
+        "raw": "360 g de petits suisses"
+      },
+      {
+        "ingredientId": "parmesan",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de parmesan"
+      },
+      {
+        "ingredientId": "spaghetti",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de spaghetti"
+      },
+      {
+        "ingredientId": "brocoli",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de brocoli"
+      },
+      {
+        "ingredientId": "huile-d-olive",
+        "quantity": 40.0,
+        "unit": "g",
+        "raw": "40 g d'huile d'olive"
+      },
+      {
+        "ingredientId": "basilic",
+        "quantity": null,
+        "unit": null,
+        "raw": "Basilic"
+      },
+      {
+        "ingredientId": "pistaches",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de pistaches"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika"
+      },
+      {
+        "ingredientId": "origan",
+        "quantity": null,
+        "unit": null,
+        "raw": "Origan"
+      }
+    ],
+    "steps": [
+      "Découpe le poulet et assaisonne-le avec sel, poivre, paprika et origan.",
+      "Saupoudre le poulet d'une partie du parmesan.",
+      "Fais cuire le poulet 16 minutes à la poêle ou à l'Air Fryer à 200°.",
+      "Fais cuire les spaghetti environ 10 minutes en gardant un peu d'eau de cuisson.",
+      "Fais cuire les brocolis.",
+      "Coupe l'oignon et fais-le revenir à la poêle, puis ajoute les brocolis et mélange.",
+      "Mixe les pistaches, le reste du parmesan, l'ail, les épinards, le basilic, l'huile d'olive et les petits suisses avec sel, poivre et un peu d'eau des pâtes.",
+      "Mélange le pesto aux pâtes.",
+      "Répartis dans 5 boîtes : 200 g de poulet, les pâtes au pesto, les brocolis et l'oignon."
+    ],
+    "macros": {
+      "kcal": 805,
+      "protein": 75,
+      "carbs": 78,
+      "fat": 24,
+      "source": "announced"
+    },
+    "id": "DAtkPMZoPuO",
+    "url": "https://www.instagram.com/reel/DAtkPMZoPuO/",
+    "postedAt": "2024-10-04",
+    "thumbnail": "thumbs/DAtkPMZoPuO.webp",
+    "extractedAt": "2026-10-07T17:38:21Z"
+  },
+  {
+    "title": "Tacos XXL viande hachée, frites de patate douce et sauce fromagère",
+    "region": "Mexique",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de viande hachée 5%"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon"
+      },
+      {
+        "ingredientId": "poivron-rouge",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 poivron rouge"
+      },
+      {
+        "ingredientId": "poivron-vert",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 poivron vert"
+      },
+      {
+        "ingredientId": "petits-suisses",
+        "quantity": 360.0,
+        "unit": "g",
+        "raw": "360 g de petits suisses"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika (ou mélange d'épices mexicain)"
+      },
+      {
+        "ingredientId": "wraps",
+        "quantity": 5.0,
+        "unit": "pièce",
+        "raw": "5 gros wraps"
+      },
+      {
+        "ingredientId": "mozzarella",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de mozzarella râpée"
+      },
+      {
+        "ingredientId": "patate-douce",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de patates douces"
+      },
+      {
+        "ingredientId": "origan",
+        "quantity": null,
+        "unit": null,
+        "raw": "Origan"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "lait",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de lait"
+      }
+    ],
+    "steps": [
+      "Coupe les patates douces en frites et assaisonne-les avec paprika, origan, sel et poivre.",
+      "Fais cuire les frites 25 minutes à l'air fryer jusqu'à ce qu'elles soient bien dorées.",
+      "Assaisonne la viande hachée avec les épices, le sel et le poivre.",
+      "Émince l'oignon et coupe les poivrons en lamelles.",
+      "Fais revenir l'oignon et les poivrons à la poêle, ajoute l'ail et laisse caraméliser.",
+      "Dans la même poêle, fais cuire la viande environ 6 minutes jusqu'à ce qu'elle soit bien dorée.",
+      "Ajoute les oignons et les poivrons à la viande.",
+      "Mélange les petits suisses, le sel, le poivre et la mozzarella.",
+      "Ajoute un peu de lait pour obtenir une sauce fondante.",
+      "Garnis chaque wrap de viande, de frites de patate douce et de sauce fromagère, puis plie-le.",
+      "Fais réchauffer les tacos des deux côtés à la poêle pour les souder.",
+      "Enroule chaque tacos dans de l'aluminium."
+    ],
+    "macros": {
+      "kcal": 810,
+      "protein": 65,
+      "carbs": 75,
+      "fat": 28,
+      "source": "announced"
+    },
+    "id": "DAbmpy5IFhU",
+    "url": "https://www.instagram.com/reel/DAbmpy5IFhU/",
+    "postedAt": "2024-09-27",
+    "thumbnail": "thumbs/DAbmpy5IFhU.webp",
+    "extractedAt": "2026-10-07T17:36:55Z"
+  },
+  {
+    "title": "Burgers hyperprotéinés à la sauce cocktail",
+    "region": "États-Unis",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de viande hachée"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon"
+      },
+      {
+        "ingredientId": "tomate",
+        "quantity": 3.0,
+        "unit": "pièce",
+        "raw": "2-3 tomates"
+      },
+      {
+        "ingredientId": "petits-suisses",
+        "quantity": 240.0,
+        "unit": "g",
+        "raw": "240 g de petits suisses (ou carré frais)"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika fumé"
+      },
+      {
+        "ingredientId": "pain-burger",
+        "quantity": 10.0,
+        "unit": "pièce",
+        "raw": "10 pains burgers (sans huile de palme)"
+      },
+      {
+        "ingredientId": "salade",
+        "quantity": null,
+        "unit": null,
+        "raw": "Salade"
+      },
+      {
+        "ingredientId": "cornichons",
+        "quantity": null,
+        "unit": null,
+        "raw": "Cornichons"
+      },
+      {
+        "ingredientId": "cheddar",
+        "quantity": 10.0,
+        "unit": "pièce",
+        "raw": "10 tranches de cheddar"
+      },
+      {
+        "ingredientId": "ketchup-allege",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ketchup allégé"
+      },
+      {
+        "ingredientId": "sauce-worcestershire",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce Worcestershire"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Assaisonne la viande hachée avec l'ail, l'oignon, le sel, le poivre, le paprika fumé et la sauce Worcestershire.",
+      "Mélange bien à la main.",
+      "Forme 10 boulettes égales.",
+      "Écrase chaque boulette avec une poêle pour former des steaks.",
+      "Fais cuire les steaks 6 min à la poêle ou à l'Air Fryer à 200 °C.",
+      "Pose une tranche de cheddar sur chaque steak encore chaud.",
+      "Coupe les oignons et les tomates en rondelles.",
+      "Mélange les petits suisses avec le sel, le poivre et un peu de ketchup pour la sauce.",
+      "Assemble les burgers : steak et cheddar, salade, tomate, oignon, sauce sur le dessus du pain, puis cornichons.",
+      "Conserve les burgers dans du papier aluminium."
+    ],
+    "macros": {
+      "kcal": 810,
+      "protein": 71,
+      "carbs": 69,
+      "fat": 28,
+      "source": "announced"
+    },
+    "id": "DAJhDFrokK7",
+    "url": "https://www.instagram.com/reel/DAJhDFrokK7/",
+    "postedAt": "2024-09-20",
+    "thumbnail": "thumbs/DAJhDFrokK7.webp",
+    "extractedAt": "2026-10-07T17:34:59Z"
+  },
+  {
+    "title": "Korean chicken, pâtes et salade de concombre",
+    "region": "Asie de l'Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon"
+      },
+      {
+        "ingredientId": "concombre",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de concombres"
+      },
+      {
+        "ingredientId": "carre-frais",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de carré frais ou de petits suisses"
+      },
+      {
+        "ingredientId": "graines-de-sesame",
+        "quantity": 50.0,
+        "unit": "g",
+        "raw": "50 g de graines de sésame"
+      },
+      {
+        "ingredientId": "pates-completes",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de pâtes complètes"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika (ou autre épice)"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": 50.0,
+        "unit": "ml",
+        "raw": "50 ml de sauce soja"
+      },
+      {
+        "ingredientId": "sauce-huitre",
+        "quantity": 50.0,
+        "unit": "ml",
+        "raw": "50 ml de sauce huître"
+      },
+      {
+        "ingredientId": "sriracha",
+        "quantity": 50.0,
+        "unit": "ml",
+        "raw": "50 ml de sriracha"
+      },
+      {
+        "ingredientId": "piment",
+        "quantity": null,
+        "unit": null,
+        "raw": "Piment (optionnel)"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Découpez le poulet en morceaux.",
+      "Assaisonnez le poulet avec le sel, le poivre, le paprika et l'ail.",
+      "Faites cuire le poulet 16 minutes à 200 °C, à la poêle ou à l'Air Fryer.",
+      "Faites cuire les pâtes complètes.",
+      "Mélangez dans une poêle la sauce soja, la sriracha et la sauce huître.",
+      "Ajoutez le poulet à la sauce et mélangez bien.",
+      "Saupoudrez de graines de sésame.",
+      "Découpez le concombre en morceaux.",
+      "Assaisonnez le concombre avec sésame, sauce soja, sel, poivre, piment et carré frais.",
+      "Ajoutez l'oignon coupé et un peu de sésame, puis mélangez bien.",
+      "Répartissez concombres, pâtes et poulet dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 747,
+      "protein": 85,
+      "carbs": 78,
+      "fat": 11,
+      "source": "announced"
+    },
+    "id": "C_3jx_eI5tc",
+    "url": "https://www.instagram.com/reel/C_3jx_eI5tc/",
+    "postedAt": "2024-09-13",
+    "thumbnail": "thumbs/C_3jx_eI5tc.webp",
+    "extractedAt": "2026-10-07T17:33:21Z"
+  },
+  {
+    "title": "Nuggets de poulet maison, riz et légumes sautés",
+    "region": "États-Unis",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 2.0,
+        "unit": "pièce",
+        "raw": "2 oeufs"
+      },
+      {
+        "ingredientId": "parmesan",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de parmesan"
+      },
+      {
+        "ingredientId": "farine-complete",
+        "quantity": 150.0,
+        "unit": "g",
+        "raw": "150 g de farine complète"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika (fumé de préférence)"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon"
+      },
+      {
+        "ingredientId": "poivron-rouge",
+        "quantity": 2.0,
+        "unit": "pièce",
+        "raw": "2 poivrons rouges"
+      },
+      {
+        "ingredientId": "brocoli",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de brocoli"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "carotte",
+        "quantity": null,
+        "unit": null,
+        "raw": "Carottes râpées"
+      },
+      {
+        "ingredientId": "huile",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu d'huile"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": 50.0,
+        "unit": "ml",
+        "raw": "50 ml de sauce soja"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati cru"
+      },
+      {
+        "ingredientId": "sriracha",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de sauce Sriracha (optionnel)"
+      },
+      {
+        "ingredientId": "curcuma",
+        "quantity": null,
+        "unit": null,
+        "raw": "Curcuma (optionnel)"
+      }
+    ],
+    "steps": [
+      "Hachez le poulet.",
+      "Assaisonnez avec le sel, le poivre et le paprika.",
+      "Ajoutez les 2 oeufs et les 100 g de parmesan, puis mélangez bien.",
+      "Formez les nuggets.",
+      "Préparez la panure : mélangez la farine complète, le paprika, le sel et le poivre, puis ajoutez de l'eau.",
+      "Enrobez les nuggets de panure.",
+      "Faites cuire les nuggets 16 minutes au four ou à l'airfryer à 200 °C, jusqu'à ce qu'ils soient dorés.",
+      "Faites cuire le riz basmati.",
+      "Découpez l'oignon et les poivrons, puis faites-les cuire à la poêle avec un peu d'huile.",
+      "Ajoutez le brocoli, l'ail et les carottes râpées, puis mélangez.",
+      "Assaisonnez avec la sauce soja et un peu de sriracha.",
+      "Répartissez nuggets, légumes et riz dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 746,
+      "protein": 80,
+      "carbs": 75,
+      "fat": 14,
+      "source": "announced"
+    },
+    "id": "C_Tgh-ZocOn",
+    "url": "https://www.instagram.com/reel/C_Tgh-ZocOn/",
+    "postedAt": "2024-08-30",
+    "thumbnail": "thumbs/C_Tgh-ZocOn.webp",
+    "extractedAt": "2026-10-07T17:32:04Z"
+  },
+  {
+    "title": "Salade thaï au poulet, soja et nouilles",
+    "region": "Asie du Sud-Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "proteines-de-soja",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de protéines de soja texturées"
+      },
+      {
+        "ingredientId": "nouilles-chinoises",
+        "quantity": 400.0,
+        "unit": "g",
+        "raw": "400 g de nouilles chinoises"
+      },
+      {
+        "ingredientId": "edamame",
+        "quantity": 250.0,
+        "unit": "g",
+        "raw": "250 g d'edamame"
+      },
+      {
+        "ingredientId": "chou-rouge",
+        "quantity": null,
+        "unit": null,
+        "raw": "Chou rouge"
+      },
+      {
+        "ingredientId": "carotte",
+        "quantity": null,
+        "unit": null,
+        "raw": "Carottes râpées"
+      },
+      {
+        "ingredientId": "poivron-rouge",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 poivron rouge"
+      },
+      {
+        "ingredientId": "poivron-jaune",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 poivron jaune"
+      },
+      {
+        "ingredientId": "oignons-jeunes",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignons jeunes"
+      },
+      {
+        "ingredientId": "coriandre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Coriandre"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce soja"
+      },
+      {
+        "ingredientId": "beurre-de-cacahuetes",
+        "quantity": null,
+        "unit": null,
+        "raw": "Beurre de cacahuète (optionnel)"
+      },
+      {
+        "ingredientId": "miel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de miel"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "cacahuetes",
+        "quantity": null,
+        "unit": null,
+        "raw": "Cacahuètes pour le topping"
+      }
+    ],
+    "steps": [
+      "Assaisonne le poulet avec sel, poivre, sauce soja, ail et un peu de miel.",
+      "Enfourne le poulet 16 minutes à 200 °C, au four ou à l'Air Fryer.",
+      "Fais cuire les protéines de soja 10 minutes dans de l'eau bouillante.",
+      "Cuis les nouilles chinoises.",
+      "Coupe les poivrons en fines lamelles et fais-les revenir à la poêle environ 10 minutes pour les ramollir.",
+      "Coupe l'oignon jeune, puis ajoute le chou rouge, les carottes râpées, l'edamame, les protéines de soja, les poivrons cuits et la coriandre.",
+      "Prépare la sauce : mélange sauce soja, beurre de cacahuète, ail et un grand verre d'eau.",
+      "Verse la sauce sur la salade et mélange bien.",
+      "Répartis salade, nouilles et poulet dans 5 boîtes.",
+      "Ajoute l'oignon jeune et quelques cacahuètes en topping."
+    ],
+    "macros": {
+      "kcal": 711,
+      "protein": 87,
+      "carbs": 68,
+      "fat": 10,
+      "source": "announced"
+    },
+    "id": "C_BbC11ImtU",
+    "url": "https://www.instagram.com/reel/C_BbC11ImtU/",
+    "postedAt": "2024-08-23",
+    "thumbnail": "thumbs/C_BbC11ImtU.webp",
+    "extractedAt": "2026-10-07T17:30:23Z"
+  },
+  {
+    "title": "Boulettes kefta et taboulé, sauce petits suisses",
+    "region": "Turquie",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 700.0,
+        "unit": "g",
+        "raw": "700 g de viande hachée 5%"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon"
+      },
+      {
+        "ingredientId": "citron",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 citron"
+      },
+      {
+        "ingredientId": "boulgour",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de boulgour"
+      },
+      {
+        "ingredientId": "oignons-jeunes",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon jeune (optionnel)"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 2.0,
+        "unit": "pièce",
+        "raw": "2 oeufs (optionnel)"
+      },
+      {
+        "ingredientId": "petits-suisses",
+        "quantity": 360.0,
+        "unit": "g",
+        "raw": "360 g de petits suisses"
+      },
+      {
+        "ingredientId": "tomate",
+        "quantity": null,
+        "unit": null,
+        "raw": "Tomates cerises"
+      },
+      {
+        "ingredientId": "concombre",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 gros concombre"
+      },
+      {
+        "ingredientId": "persil",
+        "quantity": null,
+        "unit": null,
+        "raw": "Persil"
+      },
+      {
+        "ingredientId": "menthe",
+        "quantity": null,
+        "unit": null,
+        "raw": "Menthe"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika"
+      },
+      {
+        "ingredientId": "cumin",
+        "quantity": null,
+        "unit": null,
+        "raw": "Cumin"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "huile",
+        "quantity": null,
+        "unit": null,
+        "raw": "Huile"
+      }
+    ],
+    "steps": [
+      "Assaisonne la viande avec sel, poivre, paprika, cumin et ail.",
+      "Coupe l'oignon, hache très finement le persil et la menthe, puis ajoute le tout à la viande.",
+      "Ajoute 2 oeufs pour lier la farce (optionnel) et un peu d'huile, puis mélange bien.",
+      "Forme 25 boulettes à la main.",
+      "Fais cuire les boulettes 8 minutes au four ou à l'airfryer.",
+      "Mélange les petits suisses avec sel, poivre, persil, menthe, ail et du jus de citron pour faire la sauce.",
+      "Mélange le boulgour avec un concombre coupé en julienne, les tomates cerises, un peu d'oignon, sel, poivre et le jus de la deuxième moitié du citron.",
+      "Ajoute de l'oignon jeune et du cumin au taboulé selon le goût.",
+      "Répartis le taboulé et 5 boulettes dans chacun des 5 contenants, avec la sauce."
+    ],
+    "macros": {
+      "kcal": 675,
+      "protein": 63,
+      "carbs": 68,
+      "fat": 16,
+      "source": "announced"
+    },
+    "id": "C-vcIfkI95_",
+    "url": "https://www.instagram.com/reel/C-vcIfkI95_/",
+    "postedAt": "2024-08-16",
+    "thumbnail": "thumbs/C-vcIfkI95_.webp",
+    "extractedAt": "2026-10-07T17:28:54Z"
+  },
+  {
+    "title": "Pad thaï au poulet et à l'omelette",
+    "region": "Asie du Sud-Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail en poudre"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon"
+      },
+      {
+        "ingredientId": "citron",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 citron"
+      },
+      {
+        "ingredientId": "nouilles-de-riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de nouilles de riz"
+      },
+      {
+        "ingredientId": "oignons-jeunes",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon jeune (cébette)"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 10.0,
+        "unit": "pièce",
+        "raw": "10 oeufs"
+      },
+      {
+        "ingredientId": "cacahuetes",
+        "quantity": 50.0,
+        "unit": "g",
+        "raw": "50 g de cacahuètes non salées"
+      },
+      {
+        "ingredientId": "sauce-pad-thai",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce pad thaï"
+      },
+      {
+        "ingredientId": "sriracha",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de sauce sriracha (optionnel)"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce soja"
+      },
+      {
+        "ingredientId": "pousses-de-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Pousses de soja"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "piment",
+        "quantity": null,
+        "unit": null,
+        "raw": "Piment (optionnel)"
+      }
+    ],
+    "steps": [
+      "Découpe le poulet et assaisonne-le avec sel, poivre, sauce soja, ail en poudre, la moitié de la sauce pad thaï, un peu de sriracha et de piment.",
+      "Cuis le poulet 12 minutes au four ou à l'air fryer jusqu'à ce qu'il soit bien doré.",
+      "Mélange la sauce soja, le reste de la sauce pad thaï, un peu de sriracha et le jus d'un citron pour la sauce.",
+      "Fais cuire les nouilles de riz.",
+      "Fais caraméliser l'oignon émincé avec l'oignon jeune émincé.",
+      "Fais de la place dans la poêle, puis cuis les 10 oeufs en omelette.",
+      "Mélange les oeufs avec les oignons, ajoute les nouilles, puis verse la sauce.",
+      "Ajoute le poulet et mélange bien, puis ajoute encore de l'oignon jeune et les pousses de soja.",
+      "Répartis en 5 contenants de parts à peu près égales.",
+      "Termine avec un peu d'oignon jeune et 50 g de cacahuètes concassées."
+    ],
+    "macros": {
+      "kcal": 707,
+      "protein": 72,
+      "carbs": 60,
+      "fat": 20,
+      "source": "announced"
+    },
+    "id": "C-dY24yoeD4",
+    "url": "https://www.instagram.com/reel/C-dY24yoeD4/",
+    "postedAt": "2024-08-09",
+    "thumbnail": "thumbs/C-dY24yoeD4.webp",
+    "extractedAt": "2026-10-07T17:27:03Z"
+  },
+  {
+    "title": "Riz fajitas au poulet et mozzarella",
+    "region": "Mexique",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati"
+      },
+      {
+        "ingredientId": "poivrons-surgeles",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de poivrons surgelés"
+      },
+      {
+        "ingredientId": "oignon-rouge",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon rouge"
+      },
+      {
+        "ingredientId": "mozzarella",
+        "quantity": 150.0,
+        "unit": "g",
+        "raw": "150 g de mozzarella râpée"
+      },
+      {
+        "ingredientId": "carre-frais",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de carré frais 0%"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail en poudre"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika fumé"
+      },
+      {
+        "ingredientId": "cumin",
+        "quantity": null,
+        "unit": null,
+        "raw": "Cumin"
+      },
+      {
+        "ingredientId": "coriandre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Coriandre"
+      },
+      {
+        "ingredientId": "piment",
+        "quantity": null,
+        "unit": null,
+        "raw": "Piment de Cayenne"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "sauce-piquante",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de sauce piquante (optionnel)"
+      }
+    ],
+    "steps": [
+      "Assaisonne le poulet avec le sel, le poivre, l'ail en poudre et les épices.",
+      "Coupe l'oignon rouge et fais-le revenir à la poêle jusqu'à ce qu'il caramélise.",
+      "Ajoute le poulet et les poivrons, puis fais cuire.",
+      "Verse le riz cuit et ajoute la sauce piquante si tu aimes.",
+      "Mélange bien, ajoute le carré frais et la mozzarella.",
+      "Répartis dans 5 contenants à parts égales."
+    ],
+    "macros": {
+      "kcal": 705,
+      "protein": 82,
+      "carbs": 66,
+      "fat": 12,
+      "source": "announced"
+    },
+    "id": "C9VTSesoaJB",
+    "url": "https://www.instagram.com/reel/C9VTSesoaJB/",
+    "postedAt": "2024-07-12",
+    "thumbnail": "thumbs/C9VTSesoaJB.webp",
+    "extractedAt": "2026-10-07T17:25:38Z"
+  },
+  {
+    "title": "Bœuf persillé, patates douces et petits pois au parmesan",
+    "region": null,
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de viande hachée 5%"
+      },
+      {
+        "ingredientId": "patate-douce",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de patates douces"
+      },
+      {
+        "ingredientId": "petits-pois",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de petits pois surgelés"
+      },
+      {
+        "ingredientId": "parmesan",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de parmesan"
+      },
+      {
+        "ingredientId": "persil",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 botte de persil"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika"
+      },
+      {
+        "ingredientId": "huile-d-olive",
+        "quantity": null,
+        "unit": null,
+        "raw": "Huile d'olive"
+      },
+      {
+        "ingredientId": "sriracha",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sriracha"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Coupez les patates douces en cubes et assaisonnez avec sel, poivre, persil, ail et paprika.",
+      "Faites cuire les patates douces au four ou à l'airfryer 25 minutes à 200 °C.",
+      "Assaisonnez la viande hachée avec sel, poivre, persil, huile d'olive et un peu de sriracha.",
+      "Faites cuire la viande à la poêle jusqu'à ce qu'elle soit bien dorée.",
+      "Ajoutez les patates douces, mélangez, puis ajoutez du persil et les 100 g de parmesan.",
+      "Laissez cuire à feu doux jusqu'à ce que le parmesan fonde.",
+      "Coupez l'oignon et faites-le cuire dans une poêle avec les petits pois.",
+      "Répartissez le tout dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 640,
+      "protein": 66,
+      "carbs": 55,
+      "fat": 17,
+      "source": "announced"
+    },
+    "id": "C9DNhPpoy9v",
+    "url": "https://www.instagram.com/reel/C9DNhPpoy9v/",
+    "postedAt": "2024-07-05",
+    "thumbnail": "thumbs/C9DNhPpoy9v.webp",
+    "extractedAt": "2026-10-07T17:24:00Z"
+  },
+  {
+    "title": "Poulet pimenté, patates et protéines de soja",
+    "region": null,
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de filets de poulet"
+      },
+      {
+        "ingredientId": "pommes-de-terre",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de pommes de terre grenailles"
+      },
+      {
+        "ingredientId": "haricots-verts",
+        "quantity": 400.0,
+        "unit": "g",
+        "raw": "400 g de haricots verts"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon"
+      },
+      {
+        "ingredientId": "proteines-de-soja",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de protéines de soja texturées"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail en poudre"
+      },
+      {
+        "ingredientId": "mayonnaise-allegee",
+        "quantity": 50.0,
+        "unit": "g",
+        "raw": "50 g de mayonnaise allégée"
+      },
+      {
+        "ingredientId": "sauce-chili",
+        "quantity": 50.0,
+        "unit": "g",
+        "raw": "50 g de sauce chili"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": 50.0,
+        "unit": "g",
+        "raw": "50 g de sauce soja"
+      },
+      {
+        "ingredientId": "sriracha",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de sriracha"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Couper les filets de poulet en deux sur la longueur.",
+      "Assaisonner le poulet des deux côtés avec paprika, sel, poivre et ail en poudre.",
+      "Mélanger la mayonnaise allégée, la sauce chili et un peu de sriracha.",
+      "Étaler la marinade sur une face du poulet et laisser reposer.",
+      "Assaisonner les pommes de terre avec sel, poivre et ail.",
+      "Cuire le poulet et les pommes de terre ensemble à l'air fryer.",
+      "Cuire les protéines de soja 5 à 10 minutes dans l'eau bouillante pour les ramollir.",
+      "Faire revenir l'oignon à la poêle avec la sauce soja, la sauce chili et un peu d'eau jusqu'à caramélisation.",
+      "Ajouter les protéines de soja et les pommes de terre.",
+      "Cuire les haricots verts à la poêle.",
+      "Répartir poulet, pommes de terre, protéines de soja et haricots verts dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 545,
+      "protein": 75,
+      "carbs": 45,
+      "fat": 8,
+      "source": "announced"
+    },
+    "id": "C8xL31UofoT",
+    "url": "https://www.instagram.com/reel/C8xL31UofoT/",
+    "postedAt": "2024-06-28",
+    "thumbnail": "thumbs/C8xL31UofoT.webp",
+    "extractedAt": "2026-10-07T17:22:44Z"
+  },
+  {
+    "title": "Chili express à la viande hachée",
+    "region": "États-Unis",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de viande hachée 5% de matière grasse"
+      },
+      {
+        "ingredientId": "pulpe-de-tomate",
+        "quantity": 800.0,
+        "unit": "g",
+        "raw": "800 g de pulpe de tomate"
+      },
+      {
+        "ingredientId": "concentre-de-tomate",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de concentré de tomate"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": 4.0,
+        "unit": "gousse",
+        "raw": "4 gousses d'ail"
+      },
+      {
+        "ingredientId": "oignon-rouge",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon rouge"
+      },
+      {
+        "ingredientId": "haricots-rouges",
+        "quantity": 400.0,
+        "unit": "g",
+        "raw": "400 g de haricots rouges"
+      },
+      {
+        "ingredientId": "pois-chiches",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de pois chiches"
+      },
+      {
+        "ingredientId": "mais",
+        "quantity": 1.0,
+        "unit": "boîte",
+        "raw": "1 boîte de maïs"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati"
+      },
+      {
+        "ingredientId": "melange-mexicain",
+        "quantity": null,
+        "unit": null,
+        "raw": "Mélange d'épices mexicain"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "persil",
+        "quantity": null,
+        "unit": null,
+        "raw": "Persil"
+      }
+    ],
+    "steps": [
+      "Mélanger la viande hachée avec les épices.",
+      "Couper l'oignon et l'ajouter à la viande avec l'ail.",
+      "Faire cuire 10 minutes à feu vif.",
+      "Ajouter la pulpe de tomate, les haricots rouges, le maïs et les pois chiches.",
+      "Mélanger et laisser cuire environ 10 minutes.",
+      "Ajouter le concentré de tomate, le sel, le poivre et le persil.",
+      "Cuire le riz basmati.",
+      "Répartir le riz et le chili dans 5 contenants."
+    ],
+    "macros": {
+      "kcal": 782,
+      "protein": 72,
+      "carbs": 100,
+      "fat": 10,
+      "source": "announced"
+    },
+    "id": "C8fRjULo_Uw",
+    "url": "https://www.instagram.com/reel/C8fRjULo_Uw/",
+    "postedAt": "2024-06-21",
+    "thumbnail": "thumbs/C8fRjULo_Uw.webp",
+    "extractedAt": "2026-10-07T17:20:56Z"
+  },
+  {
+    "title": "Spaghetti meatballs parmesan",
+    "region": "Italie",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de viande hachée"
+      },
+      {
+        "ingredientId": "sauce-tomate",
+        "quantity": 800.0,
+        "unit": "g",
+        "raw": "800 g de sauce tomate"
+      },
+      {
+        "ingredientId": "concentre-de-tomate",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de concentré de tomate (optionnel)"
+      },
+      {
+        "ingredientId": "parmesan",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de parmesan"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 5.0,
+        "unit": "pièce",
+        "raw": "5 oeufs"
+      },
+      {
+        "ingredientId": "basilic",
+        "quantity": null,
+        "unit": null,
+        "raw": "Basilic"
+      },
+      {
+        "ingredientId": "origan",
+        "quantity": null,
+        "unit": null,
+        "raw": "Origan"
+      },
+      {
+        "ingredientId": "pates-completes",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de pâtes complètes ou normales (italiennes)"
+      },
+      {
+        "ingredientId": "chapelure",
+        "quantity": 150.0,
+        "unit": "g",
+        "raw": "150 g de chapelure de pain"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "persil",
+        "quantity": null,
+        "unit": null,
+        "raw": "Persil"
+      }
+    ],
+    "steps": [
+      "Mélange la viande hachée avec le sel, le poivre, 2 oeufs, la moitié du parmesan, le persil et l'ail.",
+      "Forme 25 boulettes, soit 5 par repas.",
+      "Mélange la chapelure avec le reste du parmesan et roule-y les boulettes.",
+      "Fais cuire les boulettes 10 minutes à 200 °C au four ou à l'air fryer.",
+      "Coupe l'oignon et le basilic.",
+      "Fais revenir l'oignon dans une poêle avec du sel et du poivre.",
+      "Ajoute la sauce tomate, le concentré de tomate, le basilic et l'origan.",
+      "Fais cuire les pâtes et mélange-les à la sauce.",
+      "Répartis les pâtes et les boulettes en 5 parts égales."
+    ],
+    "macros": {
+      "kcal": 820,
+      "protein": 71,
+      "carbs": 100,
+      "fat": 15,
+      "source": "announced"
+    },
+    "id": "C8NLG71o569",
+    "url": "https://www.instagram.com/reel/C8NLG71o569/",
+    "postedAt": "2024-06-14",
+    "thumbnail": "thumbs/C8NLG71o569.webp",
+    "extractedAt": "2026-10-07T17:19:09Z"
+  },
+  {
+    "title": "Kebab poulet frites maison",
+    "region": "Turquie",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "salade",
+        "quantity": null,
+        "unit": null,
+        "raw": "Salade"
+      },
+      {
+        "ingredientId": "tomate",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 paquet de tomates cerises"
+      },
+      {
+        "ingredientId": "oignon-rouge",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon rouge"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "aneth",
+        "quantity": null,
+        "unit": null,
+        "raw": "Aneth"
+      },
+      {
+        "ingredientId": "persil",
+        "quantity": null,
+        "unit": null,
+        "raw": "Persil"
+      },
+      {
+        "ingredientId": "pommes-de-terre",
+        "quantity": 1.5,
+        "unit": "kg",
+        "raw": "1,5 kg de pommes de terre"
+      },
+      {
+        "ingredientId": "carre-frais",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de carré frais (8 carrés)"
+      },
+      {
+        "ingredientId": "citron",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 citron"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika"
+      },
+      {
+        "ingredientId": "origan",
+        "quantity": null,
+        "unit": null,
+        "raw": "Origan"
+      },
+      {
+        "ingredientId": "huile",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu d'huile"
+      },
+      {
+        "ingredientId": "huile-d-olive",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu d'huile d'olive"
+      }
+    ],
+    "steps": [
+      "Coupe les pommes de terre en frites, avec la peau.",
+      "Assaisonne les frites avec paprika, origan et huile.",
+      "Cuis les frites 25 min au four ou à l'Air Fryer.",
+      "Mélange le poulet avec sel, poivre, paprika, origan et un peu d'huile.",
+      "Ajoute 150 g de carré frais, un peu d'ail et le jus d'un citron.",
+      "Cuis le poulet 15 min à la poêle, au four ou à l'Air Fryer.",
+      "Mélange salade, tomates et oignon rouge avec sel, poivre, huile d'olive et persil.",
+      "Prépare la sauce blanche avec le reste de carré frais, l'aneth, le citron, sel et poivre.",
+      "Répartis poulet, frites et salade dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 654,
+      "protein": 61,
+      "carbs": 60,
+      "fat": 19,
+      "source": "announced"
+    },
+    "id": "C77NSYGoLPF",
+    "url": "https://www.instagram.com/reel/C77NSYGoLPF/",
+    "postedAt": "2024-06-07",
+    "thumbnail": "thumbs/C77NSYGoLPF.webp",
+    "extractedAt": "2026-10-07T17:17:32Z"
+  },
+  {
+    "title": "Nouilles sautées au bœuf et aux œufs",
+    "region": "Asie de l'Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de viande hachée 5%"
+      },
+      {
+        "ingredientId": "nouilles-chinoises",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de nouilles chinoises"
+      },
+      {
+        "ingredientId": "poivron-rouge",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de poivron rouge"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 6.0,
+        "unit": "pièce",
+        "raw": "6 œufs"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce soja"
+      },
+      {
+        "ingredientId": "sauce-huitre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce huître"
+      },
+      {
+        "ingredientId": "sauce-piquante",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce Sriracha"
+      },
+      {
+        "ingredientId": "graines-de-sesame",
+        "quantity": null,
+        "unit": null,
+        "raw": "Graines de sésame"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon"
+      },
+      {
+        "ingredientId": "echalote",
+        "quantity": null,
+        "unit": null,
+        "raw": "Échalotes"
+      },
+      {
+        "ingredientId": "gingembre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Gingembre"
+      }
+    ],
+    "steps": [
+      "Mélange la sauce soja, la sauce huître et la Sriracha avec les graines de sésame et un peu d'eau.",
+      "Épluche le gingembre avec une cuillère.",
+      "Fais cuire la viande hachée 7 à 8 minutes à la poêle ou à l'Air fryer.",
+      "Verse la sauce sur la viande cuite et mélange bien.",
+      "Fais cuire les nouilles.",
+      "Fais revenir à feu vif l'oignon, l'ail, les échalotes, le gingembre et les poivrons pour bien les caraméliser.",
+      "Ajoute le reste de la sauce et laisse cuire.",
+      "Fais de la place dans la poêle et cuis-y les œufs.",
+      "Incorpore les nouilles au fur et à mesure et mélange le tout avec la viande.",
+      "Répartis dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 779,
+      "protein": 68,
+      "carbs": 95,
+      "fat": 14,
+      "source": "announced"
+    },
+    "id": "C7pFdFVI21v",
+    "url": "https://www.instagram.com/reel/C7pFdFVI21v/",
+    "postedAt": "2024-05-31",
+    "thumbnail": "thumbs/C7pFdFVI21v.webp",
+    "extractedAt": "2026-10-07T17:16:12Z"
+  },
+  {
+    "title": "Poulet, riz et lentilles à petit budget",
+    "region": null,
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati"
+      },
+      {
+        "ingredientId": "lentilles",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de lentilles"
+      },
+      {
+        "ingredientId": "curry",
+        "quantity": null,
+        "unit": null,
+        "raw": "Curry doux"
+      },
+      {
+        "ingredientId": "curcuma",
+        "quantity": null,
+        "unit": null,
+        "raw": "Curcuma"
+      },
+      {
+        "ingredientId": "cumin",
+        "quantity": null,
+        "unit": null,
+        "raw": "Cumin"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": 4.0,
+        "unit": "pièce",
+        "raw": "4 gousses d'ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon"
+      },
+      {
+        "ingredientId": "tomate",
+        "quantity": 300.0,
+        "unit": "g",
+        "raw": "300 g de tomates"
+      },
+      {
+        "ingredientId": "carotte",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de carottes"
+      },
+      {
+        "ingredientId": "huile-d-olive",
+        "quantity": null,
+        "unit": null,
+        "raw": "Huile d'olive"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika"
+      },
+      {
+        "ingredientId": "origan",
+        "quantity": null,
+        "unit": null,
+        "raw": "Origan"
+      }
+    ],
+    "steps": [
+      "Découpe le poulet et assaisonne-le avec huile d'olive, sel, poivre, paprika et origan.",
+      "Fais cuire le poulet 15 minutes à 200 °C au air fryer ou au four.",
+      "Rince bien les lentilles.",
+      "Fais cuire les lentilles 25 minutes dans l'eau bouillante avec curry, cumin et curcuma.",
+      "Fais revenir le tout à feu vif dans une poêle avec l'ail, sel, poivre et les épices.",
+      "Répartis 200 g de riz, les lentilles et le poulet dans 5 contenants."
+    ],
+    "macros": {
+      "kcal": 745,
+      "protein": 76,
+      "carbs": 88,
+      "fat": 10,
+      "source": "announced"
+    },
+    "id": "C7XHBBfoTg5",
+    "url": "https://www.instagram.com/reel/C7XHBBfoTg5/",
+    "postedAt": "2024-05-24",
+    "thumbnail": "thumbs/C7XHBBfoTg5.webp",
+    "extractedAt": "2026-10-07T17:14:30Z"
+  },
+  {
+    "title": "Poulet au curry tomaté et riz basmati",
+    "region": "Inde",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati"
+      },
+      {
+        "ingredientId": "poivrons-surgeles",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de poivrons surgelés découpés"
+      },
+      {
+        "ingredientId": "curry",
+        "quantity": null,
+        "unit": null,
+        "raw": "Curry doux"
+      },
+      {
+        "ingredientId": "garam-masala",
+        "quantity": null,
+        "unit": null,
+        "raw": "Garam masala"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 gousse d'ail"
+      },
+      {
+        "ingredientId": "oignon-rouge",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon rouge"
+      },
+      {
+        "ingredientId": "pulpe-de-tomate",
+        "quantity": 800.0,
+        "unit": "g",
+        "raw": "800 g de pulpe de tomate (2 boîtes)"
+      },
+      {
+        "ingredientId": "petits-suisses",
+        "quantity": 360.0,
+        "unit": "g",
+        "raw": "360 g de petits suisses ou de skyr"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "persil",
+        "quantity": null,
+        "unit": null,
+        "raw": "Persil"
+      }
+    ],
+    "steps": [
+      "Assaisonne le poulet avec le sel, le poivre, le curry et le garam masala.",
+      "Fais cuire le poulet 15 minutes au four ou à l'Air Fryer à 200 °C.",
+      "Émince l'oignon.",
+      "Mixe une boîte de pulpe de tomate avec l'ail, l'oignon et les épices pendant 15 à 20 secondes.",
+      "Fais revenir les poivrons dans une poêle jusqu'à ce qu'ils soient bien saisis.",
+      "Ajoute la sauce mixée, la deuxième boîte de pulpe de tomate et les petits suisses.",
+      "Mélange pour homogénéiser la sauce, puis ajoute le poulet.",
+      "Fais cuire le riz.",
+      "Répartis le riz, le persil et environ 200 g de poulet avec la sauce dans 5 contenants."
+    ],
+    "macros": {
+      "kcal": 690,
+      "protein": 77,
+      "carbs": 75,
+      "fat": 9,
+      "source": "announced"
+    },
+    "id": "C7FKcGsIOaa",
+    "url": "https://www.instagram.com/reel/C7FKcGsIOaa/",
+    "postedAt": "2024-05-17",
+    "thumbnail": "thumbs/C7FKcGsIOaa.webp",
+    "extractedAt": "2026-10-07T17:12:49Z"
+  },
+  {
+    "title": "Saumon en papillote croûte parmesan-cumin",
+    "region": null,
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "saumon",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de saumon"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati"
+      },
+      {
+        "ingredientId": "asperges",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g d'asperges vertes (ou 1 kg de brocoli)"
+      },
+      {
+        "ingredientId": "cumin",
+        "quantity": null,
+        "unit": null,
+        "raw": "Cumin"
+      },
+      {
+        "ingredientId": "graines-de-sesame",
+        "quantity": null,
+        "unit": null,
+        "raw": "Graines de sésame"
+      },
+      {
+        "ingredientId": "parmesan",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de parmesan"
+      },
+      {
+        "ingredientId": "huile-d-olive",
+        "quantity": null,
+        "unit": null,
+        "raw": "Huile d'olive"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce soja"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Préchauffe le four à 200 °C.",
+      "Assaisonne le saumon avec du sel, du poivre, un filet d'huile d'olive et une bonne dose de cumin.",
+      "Recouvre le saumon de parmesan pour former une croûte.",
+      "Enferme le saumon dans du papier cuisson et agrafe la papillote pour garder le jus.",
+      "Cuis le saumon 18 min au four.",
+      "Cuis le riz basmati.",
+      "Coupe les asperges en petits morceaux et fais-les cuire 5 à 10 min à la poêle avec de l'huile d'olive et de la sauce soja.",
+      "Dresse les boîtes avec 200 g de riz, du saumon et des asperges, puis ajoute les graines de sésame."
+    ],
+    "macros": {
+      "kcal": 675,
+      "protein": 59,
+      "carbs": 70,
+      "fat": 18,
+      "source": "announced"
+    },
+    "id": "C6zBn67I6jm",
+    "url": "https://www.instagram.com/reel/C6zBn67I6jm/",
+    "postedAt": "2024-05-10",
+    "thumbnail": "thumbs/C6zBn67I6jm.webp",
+    "extractedAt": "2026-10-07T17:11:02Z"
+  },
+  {
+    "title": "Nouilles sautées poulet, œufs et épinards",
+    "region": "Asie de l'Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "nouilles-chinoises",
+        "quantity": 400.0,
+        "unit": "g",
+        "raw": "400 g de nouilles chinoises"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 10.0,
+        "unit": "pièce",
+        "raw": "10 œufs"
+      },
+      {
+        "ingredientId": "epinards",
+        "quantity": 300.0,
+        "unit": "g",
+        "raw": "300 g d'épinards"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "sauce-huitre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce huître"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce soja"
+      },
+      {
+        "ingredientId": "miel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de miel ou de sirop d'érable (optionnel)"
+      },
+      {
+        "ingredientId": "cacahuetes",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de cacahuètes"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignons (pour saupoudrer)"
+      }
+    ],
+    "steps": [
+      "Découpe le poulet en morceaux.",
+      "Assaisonne-le avec l'ail, le sel, le poivre, la sauce soja, un peu de miel et la sauce huître.",
+      "Mélange et laisse mariner un peu.",
+      "Fais cuire le poulet dans une poêle à feu vif jusqu'à ce qu'il soit bien doré.",
+      "Casse les 10 œufs dans une autre poêle et brouille-les.",
+      "Fais de la place, ajoute les épinards et mélange pour les faire cuire un peu.",
+      "Assaisonne avec la même sauce que le poulet.",
+      "Ajoute le poulet et mélange bien.",
+      "Répartis les nouilles chinoises, le poulet et les épinards dans 5 contenants.",
+      "Saupoudre d'oignons et de cacahuètes."
+    ],
+    "macros": {
+      "kcal": 662,
+      "protein": 71,
+      "carbs": 52,
+      "fat": 19,
+      "source": "announced"
+    },
+    "id": "C6hCmHpIn69",
+    "url": "https://www.instagram.com/reel/C6hCmHpIn69/",
+    "postedAt": "2024-05-03",
+    "thumbnail": "thumbs/C6hCmHpIn69.webp",
+    "extractedAt": "2026-10-07T17:09:52Z"
+  },
+  {
+    "title": "Green beef stir fry riz et haricots verts",
+    "region": "Asie de l'Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de viande hachée 5%"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati"
+      },
+      {
+        "ingredientId": "pois-chiches",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de pois chiches"
+      },
+      {
+        "ingredientId": "poivron-rouge",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 poivron rouge"
+      },
+      {
+        "ingredientId": "haricots-verts",
+        "quantity": 350.0,
+        "unit": "g",
+        "raw": "350 g de haricots verts frais"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": 2.0,
+        "unit": "gousse",
+        "raw": "2 gousses d'ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon"
+      },
+      {
+        "ingredientId": "sauce-huitre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce huître"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce soja"
+      },
+      {
+        "ingredientId": "miel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de miel ou de sirop d'érable (optionnel)"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika"
+      },
+      {
+        "ingredientId": "origan",
+        "quantity": null,
+        "unit": null,
+        "raw": "Origan"
+      },
+      {
+        "ingredientId": "graines-de-sesame",
+        "quantity": null,
+        "unit": null,
+        "raw": "Graines de sésame"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Émince l'oignon et écrase l'ail.",
+      "Assaisonne la viande hachée avec sel, poivre, sauce soja, un peu de miel, sauce huître, une partie de l'oignon et l'ail.",
+      "Mélange bien puis fais cuire la viande dans une poêle bien chaude jusqu'à ce qu'elle caramélise.",
+      "Découpe le poivron rouge et les haricots verts.",
+      "Fais-les revenir dans une poêle avec le reste de l'oignon, de l'ail et les sauces, environ 15 minutes.",
+      "Ajoute la viande et saupoudre de graines de sésame.",
+      "Cuis le riz et assaisonne-le avec sel, poivre et un peu d'oignon.",
+      "Répartis le tout dans les contenants."
+    ],
+    "macros": {
+      "kcal": 780,
+      "protein": 79,
+      "carbs": 90,
+      "fat": 12,
+      "source": "announced"
+    },
+    "id": "C6O9Ibsoh9S",
+    "url": "https://www.instagram.com/reel/C6O9Ibsoh9S/",
+    "postedAt": "2024-04-26",
+    "thumbnail": "thumbs/C6O9Ibsoh9S.webp",
+    "extractedAt": "2026-10-07T17:08:31Z"
+  },
+  {
+    "title": "Popcorn chicken et mac and cheese",
+    "region": "États-Unis",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "pates-completes",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de pâtes complètes"
+      },
+      {
+        "ingredientId": "brocoli",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de brocoli"
+      },
+      {
+        "ingredientId": "carre-frais",
+        "quantity": 150.0,
+        "unit": "g",
+        "raw": "150 g de carré frais"
+      },
+      {
+        "ingredientId": "fromage-allege",
+        "quantity": 4.0,
+        "unit": "tranche",
+        "raw": "3-4 tranches de fromage allégé (Leerdammer)"
+      },
+      {
+        "ingredientId": "moutarde",
+        "quantity": null,
+        "unit": null,
+        "raw": "De la moutarde"
+      },
+      {
+        "ingredientId": "lait",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de lait"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail en poudre"
+      },
+      {
+        "ingredientId": "farine-complete",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de farine complète"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika"
+      },
+      {
+        "ingredientId": "origan",
+        "quantity": null,
+        "unit": null,
+        "raw": "Origan"
+      },
+      {
+        "ingredientId": "huile-d-olive",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu d'huile d'olive"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Découpe le poulet en morceaux.",
+      "Assaisonne le poulet avec l'huile d'olive, le sel, le poivre, le paprika, l'ail en poudre et l'origan.",
+      "Ajoute la farine complète et mélange bien.",
+      "Fais cuire le poulet 16 minutes à l'air fryer, jusqu'à ce qu'il soit bien doré.",
+      "Fais cuire les pâtes.",
+      "Dans une poêle, fais chauffer un peu de lait avec le carré frais, le fromage allégé en tranches et la moutarde.",
+      "Émince l'oignon, fais-le cuire un peu, puis ajoute-le à la sauce.",
+      "Ajoute les pâtes à la sauce et mélange bien.",
+      "Fais cuire les brocolis à l'eau chaude ou à l'air fryer.",
+      "Répartis le poulet, les pâtes et les brocolis dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 675,
+      "protein": 73,
+      "carbs": 70,
+      "fat": 12,
+      "source": "announced"
+    },
+    "id": "C59AOEjodb6",
+    "url": "https://www.instagram.com/reel/C59AOEjodb6/",
+    "postedAt": "2024-04-19",
+    "thumbnail": "thumbs/C59AOEjodb6.webp",
+    "extractedAt": "2026-10-07T17:07:05Z"
+  },
+  {
+    "title": "Bowl bulgogi viande hachée, riz et œufs",
+    "region": "Asie de l'Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de viande hachée"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz basmati"
+      },
+      {
+        "ingredientId": "carotte",
+        "quantity": 300.0,
+        "unit": "g",
+        "raw": "300 g de carottes râpées"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": 150.0,
+        "unit": "ml",
+        "raw": "150 ml de sauce soja"
+      },
+      {
+        "ingredientId": "sauce-bulgogi",
+        "quantity": 150.0,
+        "unit": "ml",
+        "raw": "150 ml de sauce bulgogi"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 oignon"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 5.0,
+        "unit": "pièce",
+        "raw": "5 œufs"
+      },
+      {
+        "ingredientId": "kimchi",
+        "quantity": null,
+        "unit": null,
+        "raw": "Kimchi (optionnel)"
+      }
+    ],
+    "steps": [
+      "Cuire le riz basmati.",
+      "Émincer l'oignon et l'ail.",
+      "Faire revenir l'oignon et l'ail, puis ajouter la viande hachée et la cuire.",
+      "Ajouter les carottes râpées, la sauce soja et la sauce bulgogi.",
+      "Cuire les œufs.",
+      "Répartir le riz, la viande et les œufs dans 5 boîtes.",
+      "Ajouter le kimchi selon l'envie."
+    ],
+    "macros": {
+      "kcal": 775,
+      "protein": 70,
+      "carbs": 90,
+      "fat": 15,
+      "source": "announced"
+    },
+    "id": "C5q5T08IRDi",
+    "url": "https://www.instagram.com/reel/C5q5T08IRDi/",
+    "postedAt": "2024-04-12",
+    "thumbnail": "thumbs/C5q5T08IRDi.webp",
+    "extractedAt": "2026-10-07T17:05:06Z"
+  },
+  {
     "title": "Poulet laqué et nouilles chinoises aux carottes",
     "region": "Asie de l'Est",
     "portions": 5,
