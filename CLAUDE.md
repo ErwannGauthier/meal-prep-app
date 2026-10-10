@@ -43,11 +43,13 @@ cd web && npm run build               # vérification des types + compilation
 
 ## État au 2026-10-10
 
-L'import de la liste de liens est fait, depuis le PC Debian (whisper.cpp sur le GPU AMD). Le catalogue compte 147 recettes, des reels du 2023-07-12 au 2026-10-02, toutes avec miniature et macros, et 149 ingrédients. Deux liens morts sont en échec dans `data/state.json`, vérifiés à la main. Le site n'est pas publié.
+L'import de la liste de liens est fait, depuis le PC Debian (whisper.cpp sur le GPU AMD). Le catalogue compte 147 recettes, des reels du 2023-07-12 au 2026-10-02, toutes avec miniature et macros, et 149 ingrédients. Deux liens morts sont en échec dans `data/state.json`, vérifiés à la main.
+
+Le site est publié depuis le 2026-10-10 : https://erwanngauthier.github.io/meal-prep-app/. GitHub Pages utilise la source « GitHub Actions ». Le workflow `.github/workflows/deploy.yml` republie le site à chaque push sur `main` qui touche `web/`, donc à chaque commit de données du pipeline.
 
 Reste à faire :
 
 1. **Détection des nouveaux reels.** Le listing fonctionne avec les cookies d'un compte secondaire (gallery-dl, vérifié le 2026-10-10 : 10 reels inconnus trouvés). Il reste à configurer `cookies_file` sur le PC Debian, à y réinstaller les dépendances (`.venv/bin/pip install -e .`) et à faire un premier lancement réel : `lastFeedCheck` vaut encore `null` dans `data/state.json`. Sans compte, Instagram refuse le listing.
-2. **Régions manquantes.** 28 recettes n'ont pas de région et échappent au filtre par région.
-3. **Publier.** Activer GitHub Pages (source « GitHub Actions »), puis remettre `push: branches: [main]` dans `.github/workflows/deploy.yml`, qui est en déclenchement manuel pour l'instant.
-4. **Tester sur iPhone.** Le partage vers Notes, « Copier la liste », le retour arrière vers la liste filtrée, le champ de recherche, et le panneau d'ingrédients avec les 149 ingrédients réels.
+2. **Tester sur iPhone.** Le partage vers Notes, « Copier la liste », le retour arrière vers la liste filtrée, le champ de recherche, et le panneau d'ingrédients avec les 149 ingrédients réels. Rien de tout cela n'a encore été vérifié sur un vrai iPhone.
+3. **Régions manquantes.** 28 recettes n'ont pas de région et échappent au filtre par région.
+4. **Noms d'ingrédients.** Dans `ingredients.json`, les noms sont en minuscules et certains sont plus précis que leur identifiant (`riz` s'appelle « riz basmati », `asperges` « asperge verte »). Ils s'affichent tels quels dans les filtres.
