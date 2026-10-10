@@ -1,10 +1,14 @@
 name: Deploy
 
-# Mise en ligne manuelle pour l'instant (onglet Actions → Deploy → Run workflow).
-# Pour publier à chaque push sur main, ajouter sous `on:` :
-#   push:
-#     branches: [main]
+# Publie le site à chaque push sur main qui touche le site ou ses données
+# (les commits « 🍱 data » du pipeline en font partie). Lancement manuel possible :
+# onglet Actions → Deploy → Run workflow.
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 permissions:
