@@ -41,13 +41,13 @@ cd web && npm run build               # vérification des types + compilation
 - Le contrat de données entre les deux parties est défini par `pipeline/models.py` et `web/src/types.ts` : toute modification de l'un se répercute sur l'autre.
 - Design du site : direction « étiquette nutritionnelle » (police Archivo, couleurs réservées aux trois macros). Toute évolution visuelle passe par le skill `frontend-design`.
 
-## État au 2026-10-03
+## État au 2026-10-10
 
-Le code est terminé, relu et poussé. Le catalogue est vide et le site n'est pas publié.
+L'import de la liste de liens est fait, depuis le PC Debian (whisper.cpp sur le GPU AMD). Le catalogue compte 147 recettes, des reels du 2023-07-12 au 2026-10-02, toutes avec miniature et macros, et 149 ingrédients. Deux liens morts sont en échec dans `data/state.json`, vérifiés à la main. Le site n'est pas publié.
 
-Reste à faire, dans l'ordre :
+Reste à faire :
 
-1. Sur le PC Debian : suivre `docs/pipeline-setup.md`, puis importer la liste de liens (`python -m pipeline import liens.csv`) et lancer `python -m pipeline run` jusqu'à épuisement de la file (30 reels au maximum par lancement).
-2. Vérifier au premier lancement ce qui n'a jamais tourné : whisper.cpp sur le GPU AMD (Vulkan), et yt-dlp et instaloader avec les cookies d'un compte secondaire. Sans cookies, le téléchargement d'un lien fonctionne, mais le listing du profil est refusé (erreur 429).
-3. Publier : activer GitHub Pages (source « GitHub Actions »), puis remettre `push: branches: [main]` dans `.github/workflows/deploy.yml`, qui est en déclenchement manuel pour l'instant.
-4. Tester sur iPhone : le partage vers Notes, « Copier la liste », le retour arrière vers la liste filtrée, le champ de recherche.
+1. **Détection des nouveaux reels.** Le listing du profil n'a encore jamais réussi : `lastFeedCheck` vaut `null` dans `data/state.json`, et tous les reels viennent de la liste importée. Sans compte, Instagram refuse le listing (erreur 429). Le chemin avec les cookies d'un compte secondaire (instaloader) n'a jamais été vérifié.
+2. **Régions manquantes.** 28 recettes n'ont pas de région et échappent au filtre par région.
+3. **Publier.** Activer GitHub Pages (source « GitHub Actions »), puis remettre `push: branches: [main]` dans `.github/workflows/deploy.yml`, qui est en déclenchement manuel pour l'instant.
+4. **Tester sur iPhone.** Le partage vers Notes, « Copier la liste », le retour arrière vers la liste filtrée, le champ de recherche, et le panneau d'ingrédients avec les 149 ingrédients réels.
