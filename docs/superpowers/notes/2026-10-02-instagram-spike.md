@@ -60,3 +60,26 @@ téléchargement réussi juste après un refus classe le reel précédent en éc
 Vérifié avec les vrais outils : conversion ffmpeg (WAV mono 16 kHz, WebP 480 px de large),
 `whisper-cli` avec et sans `-ng`, `claude -p` avec le schéma d'extraction.
 Reste à vérifier avec un vrai lien : le téléchargement yt-dlp d'un reel existant, sans puis avec cookies.
+
+## Listing du profil avec un compte (2026-10-10)
+
+Essais avec les cookies d'un compte secondaire, session valide (la page des réglages du compte répond).
+
+| Méthode | Résultat |
+|---|---|
+| Sans compte, `api/v1/users/web_profile_info/` | 401, `"require_login": true` |
+| instaloader 4.15.3 avec cookies | 429 dès le premier appel, sur `web_profile_info` |
+| Appel direct de `web_profile_info` avec cookies et en-têtes de navigateur | 429, réponse vide |
+| Appels directs de `api/v1/feed/user/<pseudo>/username/` et `api/v1/clips/user/` | 302 vers la page d'accueil |
+| gallery-dl 1.32.16, `https://www.instagram.com/bourr_/reels/` | fonctionne |
+
+gallery-dl charge la page de l'onglet Reels, puis fait une requête `POST /graphql/query`
+(`PolarisProfileReelsTabContentQuery_connection`) par page de 12 reels. Chaque reel du listing porte
+son code (`media.code`) et la liste `media.clips_tab_pinned_user_ids`, non vide s'il est épinglé.
+Le listing ne donne pas la date : elle vient du téléchargement par yt-dlp.
+
+En ligne de commande, gallery-dl ajoute une requête `api/v1/media/<id>/info/` par reel. Le pipeline
+l'évite en appelant directement `extractor.api.user_reels()` : deux requêtes pour 12 reels.
+
+Le téléchargement d'un reel par yt-dlp sans compte fonctionne (vérifié le 2026-10-03 et pendant
+l'import de 147 reels sur le PC Debian).

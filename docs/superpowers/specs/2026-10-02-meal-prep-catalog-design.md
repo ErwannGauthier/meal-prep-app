@@ -71,6 +71,11 @@ Décisions du 2026-10-03 (après essai réel et relecture) :
 - Un seul lancement à la fois (verrou) ; code de sortie non nul en cas d'arrêt anticipé.
 - yt-dlp répond la même chose pour un reel supprimé et pour un blocage : en cas de refus, le pipeline sonde un reel déjà traité pour trancher ; un reel qui interrompt 5 lancements de suite est abandonné ; `python -m pipeline retry` remet en file les reels en échec.
 
+Décisions du 2026-10-10 (détection des nouveaux reels) :
+- Le listing du profil exige un compte (Instagram répond « require_login » sans cookies). Quand `cookies_file` est configuré, le listing se fait directement avec les cookies, sans essai anonyme.
+- Le pipeline ne lit plus une fenêtre fixe de 12 publications : il remonte l'onglet Reels du profil jusqu'au premier reel déjà connu et non épinglé, dans la limite de 50 reels. Les reels épinglés inconnus sont traités aussi.
+- gallery-dl remplace instaloader pour ce listing. Avec un compte valide, instaloader recevait une erreur 429 dès le premier appel ; gallery-dl liste 12 reels en deux requêtes et indique lesquels sont épinglés (vérifié le 2026-10-10). On utilise son API de listing comme bibliothèque, sans appel par reel.
+
 Le **seul contrat** entre le pipeline et le site est le format de `recipes.json` et `ingredients.json` (section 4). Le pipeline ignore React ; le site ignore Instagram.
 
 ## 4. Modèle de données
@@ -164,7 +169,7 @@ python -m pipeline reextract [id]           # ré-exécute l'extraction depuis l
 |---|---|
 | `config` | Charge `config.toml` : compte, mode GPU/CPU, chemins des modèles Whisper (GPU et CPU), délai min/max entre téléchargements, nombre max de reels par lancement (défaut 30), chemin du fichier de cookies, nombre max de tentatives (défaut 3). |
 | `sources/notion` | Extrait les shortcodes depuis un export Notion (CSV, Markdown ou texte brut) par regex sur `instagram.com/(reel\|p)/<shortcode>`. Dédoublonne. |
-| `sources/feed` | Récupère les ~12 dernières publications de @bourr_ (shortcode, date, description). Essai anonyme, puis avec cookies si refus. Bibliothèque pressentie : instaloader — **à valider par un spike en début de plan**. |
+| `sources/feed` | Liste les reels de @bourr_ inconnus du suivi (shortcode, épinglé ou non), avec les cookies d'un compte secondaire. Bibliothèque : gallery-dl (voir les décisions du 2026-10-10 en section 3). |
 | `downloader` | Via yt-dlp : audio seul converti en WAV mono 16 kHz (ffmpeg), métadonnées (description, date), miniature convertie en WebP (largeur max 480 px). Utilise les cookies si configurés et que l'essai anonyme échoue. |
 | `transcriber` | Appelle whisper.cpp en français. GPU : modèle large (ex. `large-v3-turbo`). CPU : modèle plus léger (ex. `small`). Écrit `data/sources/<id>.json` (`caption`, `transcript`, `postedAt`), supprime le WAV. |
 | `extractor` | Un appel `claude -p` par reel. Entrées : description, transcription, référentiel d'ingrédients, liste des régions existantes. Sortie : soit `{"isMealPrep": false}`, soit la recette + les nouveaux ingrédients à créer. Validée par pydantic ; 1 nouvel essai si invalide, sinon `failed`. |

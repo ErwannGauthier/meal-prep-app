@@ -86,7 +86,13 @@ Si `main` est en retard sur `origin/main`, le `git push` de fin de lancement est
 
 ## 5. Cookies du compte Instagram secondaire (recommandé)
 
-Sans cookies, Instagram refuse en pratique de lister le profil (erreur 429, constatée le 2026-10-03) : les nouveaux reels ne seront donc pas détectés automatiquement. L'import d'une liste de liens, lui, peut fonctionner sans compte.
+Sans cookies, Instagram refuse de lister le profil (réponse « require_login », constatée le 2026-10-10) : les nouveaux reels ne sont pas détectés automatiquement. L'import d'une liste de liens, lui, fonctionne sans compte.
+
+Avec des cookies, chaque lancement lit l'onglet Reels du profil, du reel le plus récent jusqu'au premier reel déjà connu, puis s'arrête. Les reels épinglés en tête de profil ne comptent pas comme signal d'arrêt. La lecture se fait avec gallery-dl et coûte deux requêtes quand il y a moins de 12 nouveautés. Elle s'arrête de toute façon après 50 reels.
+
+Le compte ne sert qu'à cette lecture : les téléchargements se font sans compte, et les cookies n'y servent qu'en secours. Le fichier de cookies n'est jamais réécrit par le pipeline.
+
+Après avoir mis à jour le dépôt, réinstaller les dépendances (gallery-dl a remplacé instaloader) : `.venv/bin/pip install -e .`
 
 1. Dans Firefox, se connecter à instagram.com avec le compte secondaire.
 2. Exporter les cookies au format Netscape (extension « cookies.txt ») dans `~/meal-prep-app/cookies.txt`. Garder « cookies » dans le nom du fichier : c'est ce qui le fait ignorer par git.

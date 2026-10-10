@@ -77,8 +77,10 @@ class FakeExtractor:
 class FakeFeed:
     def __init__(self, posts=(), error=None):
         self.posts, self.error = list(posts), error
+        self.known = None
 
-    def latest_reels(self):
+    def latest_reels(self, known):
+        self.known = set(known)
         if self.error:
             raise self.error
         return self.posts
@@ -136,7 +138,7 @@ def test_run_processes_queue_saves_recipes_sources_and_publishes(store):
 
 
 def test_feed_reels_are_queued_and_non_meal_preps_skipped(store):
-    feed = FakeFeed([FeedPost("F1", "2026-09-01", True), FeedPost("F2", "2026-09-02", True)])
+    feed = FakeFeed([FeedPost("F1"), FeedPost("F2")])
     svc, _, _ = services(store, FakeExtractor({"F1": NOT_MP, "F2": mp()}), feed=feed)
     s = run(cfg(), svc)
     state = store.load_state()
@@ -144,6 +146,15 @@ def test_feed_reels_are_queued_and_non_meal_preps_skipped(store):
     assert (state.reels["F1"].source, state.reels["F1"].status) == ("feed", "not_meal_prep")
     assert state.reels["F2"].status == "done"
     assert state.lastFeedCheck is not None
+
+
+def test_feed_is_told_which_reels_are_already_known_whatever_their_status(store):
+    queue(store, "PENDING")
+    seed_done(store, "DONE")
+    feed = FakeFeed()
+    svc, _, _ = services(store, FakeExtractor({"PENDING": NOT_MP}), feed=feed)
+    run(cfg(), svc)
+    assert feed.known == {"PENDING", "DONE"}
 
 
 def test_notion_reel_classified_not_meal_prep_fails_for_manual_check(store):
@@ -362,7 +373,7 @@ def test_summary_render_mentions_key_facts(store):
 
 
 def test_only_kept_recipes_get_a_thumbnail_on_the_site(store):
-    feed = FakeFeed([FeedPost("VLOG", "2026-09-01", True), FeedPost("PREP", "2026-09-02", True)])
+    feed = FakeFeed([FeedPost("VLOG"), FeedPost("PREP")])
     queue(store, "KO")
     dl = FakeDownloader(store.work_dir, staging=store.sources_dir)
     extractor = FakeExtractor({"KO": ReelError("extraction invalide"), "VLOG": NOT_MP, "PREP": mp()})

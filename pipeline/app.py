@@ -149,7 +149,7 @@ def run(cfg: Config, svc: Services, *, do_publish: bool = True) -> RunSummary:
     state = store.load_state()
 
     try:
-        posts = svc.feed.latest_reels()
+        posts = svc.feed.latest_reels(known=state.reels.keys())
         summary.new_in_feed = len(add_pending(state, [p.shortcode for p in posts], "feed"))
         state.lastFeedCheck = now_iso()
     except Blocked as e:
