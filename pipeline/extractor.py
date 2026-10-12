@@ -5,13 +5,25 @@ from .errors import ClaudeUnavailable, ReelError
 from .models import CATEGORIES, ExtractionResult, Ingredient
 from .proc import Runner, run_cmd
 
-PROMPT = """Tu analyses un reel Instagram du créateur @bourr_, qui publie des meal preps \
-(repas préparés à l'avance pour plusieurs jours).
+PROMPT = """Tu analyses un reel Instagram du créateur @bourr_. Il publie des meal preps, mais aussi \
+d'autres recettes et des vidéos de musculation : seuls les meal preps nous intéressent.
 
 À partir de la description et de la transcription audio ci-dessous :
 
-1. isMealPrep : true seulement si le reel présente une recette de meal prep. \
-Sinon renvoie uniquement {{"isMealPrep": false}}.
+1. isMealPrep : true seulement si le reel montre la préparation, en une fois, de plusieurs repas \
+complets destinés aux jours suivants (en général 4 à 6 boîtes, chacune avec une protéine, un féculent \
+et des légumes). Indices habituels : « 5 repas », « meal prep », « ça mange quoi cette semaine », \
+des quantités en gros (1 kg de poulet, 500 g de riz), des macros « pour 1 repas » ou « pour 1 part », \
+la répartition en boîtes.
+   Ne sont PAS des meal preps, même si la recette est complète et chiffrée :
+   - une recette pour une seule portion ou un seul repas (quantités pour une assiette ou un bol, \
+macros données pour le plat entier) ;
+   - un dessert, un snack, une boisson, un petit-déjeuner ;
+   - un accompagnement ou une salade à partager, sans repas complet par part ;
+   - un test ou une version allégée de « recette virale » (« Yes or Next », « Yes or Guez ») ;
+   - tout contenu sans recette (musculation, humour, publicité).
+   En cas de doute, réponds false.
+   Si isMealPrep vaut false, renvoie uniquement {{"isMealPrep": false}}.
 2. Sinon remplis "recipe" :
    - title : nom court et appétissant de la recette, en français.
    - region : région culinaire d'origine. Réutilise si possible une valeur de cette liste : {regions}. \

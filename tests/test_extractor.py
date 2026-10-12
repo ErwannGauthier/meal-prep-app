@@ -100,3 +100,11 @@ def test_loose_schema_has_no_validation_keywords():
     for kw in ('"pattern"', '"minLength"', '"minItems"', '"minimum"'):
         assert kw not in text
     assert "isMealPrep" in text and "newIngredients" in text
+
+
+def test_prompt_restricts_meal_prep_to_batches_of_complete_meals():
+    p = build_prompt("x", "y", [POULET], [])
+    # Le créateur publie aussi des recettes à la portion, des desserts et des accompagnements :
+    # le prompt doit dire explicitement qu'ils ne comptent pas.
+    for marker in ("plusieurs repas", "une seule portion", "dessert", "accompagnement", "en cas de doute"):
+        assert marker in p.lower(), marker

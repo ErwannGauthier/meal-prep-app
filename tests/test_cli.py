@@ -75,3 +75,19 @@ def test_exit_code_is_non_zero_on_early_stop_or_publish_failure():
     assert exit_code(RunSummary(failed=[("A", "lien mort")])) == 0
     assert exit_code(RunSummary(stopped="use --cookies")) == 1
     assert exit_code(RunSummary(publish_error="git push a échoué")) == 1
+
+
+def test_remove_command_drops_a_recipe_without_needing_a_config(tmp_path, capsys):
+    from pipeline.state import add_pending, record_attempt
+    from tests.factories import POULET, make_recipe
+    store = Store(tmp_path)
+    store.upsert_recipe(make_recipe("A", title="Salade d'été"), [POULET])
+    state = store.load_state()
+    add_pending(state, ["A"], "feed")
+    record_attempt(state, "A", "done")
+    store.save_state(state)
+    assert main(["--root", str(tmp_path), "remove", "--no-publish", "A", "ZZZ"]) == 0
+    out = capsys.readouterr().out
+    assert "Salade d'été" in out and "ZZZ" in out
+    assert Store(tmp_path).load_recipes() == []
+    assert Store(tmp_path).load_state().reels["A"].status == "not_meal_prep"

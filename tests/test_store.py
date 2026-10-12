@@ -125,3 +125,23 @@ def test_promote_keeps_an_already_published_thumbnail(tmp_path):
     s.thumbs_dir.mkdir(parents=True)
     (s.thumbs_dir / "ABC.webp").write_bytes(b"old")
     assert s.promote_thumbnail("ABC") == "thumbs/ABC.webp"
+
+
+def test_remove_recipe_drops_recipe_thumbnail_and_orphan_ingredients(tmp_path):
+    s = Store(tmp_path)
+    s.upsert_recipe(make_recipe("A", ingredient_ids=("poulet",)), [POULET])
+    s.upsert_recipe(make_recipe("B", ingredient_ids=("poulet", "riz")), [RIZ])
+    s.thumbs_dir.mkdir(parents=True)
+    (s.thumbs_dir / "B.webp").write_bytes(b"webp")
+    removed = s.remove_recipe("B")
+    assert removed.id == "B"
+    assert [r.id for r in s.load_recipes()] == ["A"]
+    assert s.load_ingredients() == [POULET]          # riz n'est plus utilisé, poulet l'est encore
+    assert not (s.thumbs_dir / "B.webp").exists()
+
+
+def test_remove_unknown_recipe_returns_none_and_changes_nothing(tmp_path):
+    s = Store(tmp_path)
+    s.upsert_recipe(make_recipe("A"), [POULET])
+    assert s.remove_recipe("ZZZ") is None
+    assert [r.id for r in s.load_recipes()] == ["A"]

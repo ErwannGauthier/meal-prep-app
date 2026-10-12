@@ -138,6 +138,7 @@ PATH=/home/<user>/.local/bin:/usr/local/bin:/usr/bin:/bin
 | `python -m pipeline run --cpu` | force whisper.cpp sur CPU |
 | `python -m pipeline reextract` | relance l'extraction de toutes les recettes (après une amélioration du prompt) |
 | `python -m pipeline reextract C9xYz12AbC` | relance une seule recette |
+| `python -m pipeline remove DbLzBujuNsU` | retire du site une recette retenue à tort (plusieurs codes possibles) ; le reel reste connu et ne sera pas reproposé |
 | `python -m pipeline retry` | remet dans la file tous les reels en échec (ou seulement ceux dont on donne le code) |
 
 ## Lire le résumé d'un lancement

@@ -72,6 +72,19 @@ class Store:
         recipes = [r for r in self.load_recipes() if r.id != recipe.id] + [recipe]
         self.save_catalog(recipes, ingredients)
 
+    def remove_recipe(self, reel_id: str) -> Recipe | None:
+        """Retire une recette du site, avec sa miniature et les ingrédients qu'elle était seule à utiliser."""
+        recipes = self.load_recipes()
+        removed = next((r for r in recipes if r.id == reel_id), None)
+        if removed is None:
+            return None
+        kept = [r for r in recipes if r.id != reel_id]
+        still_used = {x.ingredientId for r in kept for x in r.ingredients}
+        orphans = {x.ingredientId for x in removed.ingredients} - still_used
+        self.save_catalog(kept, [i for i in self.load_ingredients() if i.id not in orphans])
+        (self.thumbs_dir / f"{reel_id}.webp").unlink(missing_ok=True)
+        return removed
+
     def thumbnail_rel(self, reel_id: str) -> str | None:
         if (self.thumbs_dir / f"{reel_id}.webp").exists():
             return f"thumbs/{reel_id}.webp"

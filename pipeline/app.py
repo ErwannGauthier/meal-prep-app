@@ -251,3 +251,25 @@ def reextract(cfg: Config, svc: Services, ids: list[str] | None, *, do_publish: 
     if do_publish:
         _publish(svc, summary, f"🍱 data: {len(summary.new_recipes)} recette(s) ré-extraite(s)")
     return summary
+
+
+def remove(store: Store, ids: list[str], publish: Callable[[str], bool] | None) -> tuple[list[str], list[str]]:
+    """Retire du site des recettes retenues à tort. Renvoie (titres retirés, identifiants inconnus).
+
+    Le reel passe à « not_meal_prep » : il reste connu, donc le feed ne le repropose pas.
+    """
+    state = store.load_state()
+    removed: list[str] = []
+    unknown: list[str] = []
+    for rid in ids:
+        recipe = store.remove_recipe(rid)
+        if recipe is None:
+            unknown.append(rid)
+            continue
+        removed.append(recipe.title)
+        if rid in state.reels:
+            record_attempt(state, rid, "not_meal_prep")
+    store.save_state(state)
+    if removed and publish:
+        publish(f"🍱 data: {len(removed)} recette(s) retirée(s)")
+    return removed, unknown

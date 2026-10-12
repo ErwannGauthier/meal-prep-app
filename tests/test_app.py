@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from pipeline.app import MAX_STALLS, NOT_MEAL_PREP_ERROR, Services, import_notion, reextract, run
+from pipeline.app import MAX_STALLS, NOT_MEAL_PREP_ERROR, Services, import_notion, reextract, remove, run
 from pipeline.config import Config, WhisperConfig
 from pipeline.downloader import Download
 from pipeline.errors import Blocked, ClaudeUnavailable, ReelError
@@ -419,3 +419,23 @@ def test_reel_without_audio_is_extracted_from_its_caption_alone(store):
     assert summary.new_recipes == ["Poulet à l'orange"]
     assert extractor.transcripts == [""]
     assert store.load_source("MUET").transcript == ""
+
+
+def test_remove_drops_recipes_marks_them_not_meal_prep_and_publishes(store):
+    queue(store, "A", "B", source="feed")
+    svc, published, _ = services(store, FakeExtractor({"A": mp("Recette A"), "B": mp("Recette B")}))
+    run(cfg(), svc)
+    published.clear()
+    removed, unknown = remove(store, ["B", "ZZZ"], svc.publish)
+    assert removed == ["Recette B"] and unknown == ["ZZZ"]
+    assert [r.id for r in store.load_recipes()] == ["A"]
+    state = store.load_state()
+    assert state.reels["B"].status == "not_meal_prep"   # le feed ne le reproposera pas
+    assert state.reels["A"].status == "done"
+    assert published == ["🍱 data: 1 recette(s) retirée(s)"]
+
+
+def test_remove_nothing_does_not_publish(store):
+    svc, published, _ = services(store, FakeExtractor({}))
+    assert remove(store, ["ZZZ"], svc.publish) == ([], ["ZZZ"])
+    assert published == []

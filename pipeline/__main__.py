@@ -5,8 +5,9 @@ import shutil
 import sys
 from pathlib import Path
 
-from .app import Services, import_notion, reextract, run
+from .app import Services, import_notion, reextract, remove, run
 from .config import Config, load_config
+from .errors import PublishError
 from .downloader import Downloader
 from .extractor import Extractor
 from .publish import publish
@@ -82,6 +83,10 @@ def _parser() -> argparse.ArgumentParser:
 
     rt = sub.add_parser("retry", help="remet dans la file les reels en échec")
     rt.add_argument("ids", nargs="*", help="shortcodes (défaut : tous les reels en échec)")
+
+    rm = sub.add_parser("remove", help="retire du site des recettes retenues à tort")
+    rm.add_argument("ids", nargs="+", help="shortcodes des recettes à retirer")
+    rm.add_argument("--no-publish", action="store_true", help="ne pas faire de git push")
     return p
 
 
@@ -112,6 +117,20 @@ def _dispatch(args: argparse.Namespace, root: Path) -> int:
         requeued = retry_failed(state, args.ids or None)
         store.save_state(state)
         print(f"{len(requeued)} reel(s) remis dans la file.")
+        return 0
+
+    if args.command == "remove":
+        do_publish = None if args.no_publish else (lambda message: publish(root, message))
+        try:
+            removed, unknown = remove(Store(root), args.ids, do_publish)
+        except PublishError as e:
+            print(f"Publication : échec — {e}", file=sys.stderr)
+            return 1
+        print(f"{len(removed)} recette(s) retirée(s).")
+        for title in removed:
+            print(f"  ✗ {title}")
+        for rid in unknown:
+            print(f"  ? {rid} : aucune recette avec cet identifiant")
         return 0
 
     config_path = args.config or root / "config.toml"
