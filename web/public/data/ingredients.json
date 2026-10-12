@@ -25,6 +25,11 @@
     "category": "epices-condiments"
   },
   {
+    "id": "arome-vanille",
+    "name": "arôme vanille",
+    "category": "epices-condiments"
+  },
+  {
     "id": "asperges",
     "name": "asperge verte",
     "category": "fruits-legumes"
@@ -163,6 +168,11 @@
     "id": "cornichons",
     "name": "cornichon",
     "category": "epices-condiments"
+  },
+  {
+    "id": "cottage-cheese",
+    "name": "cottage cheese",
+    "category": "produits-laitiers-oeufs"
   },
   {
     "id": "courgette",
@@ -365,6 +375,11 @@
     "category": "epices-condiments"
   },
   {
+    "id": "melon",
+    "name": "melon",
+    "category": "fruits-legumes"
+  },
+  {
     "id": "menthe",
     "name": "menthe",
     "category": "fruits-legumes"
@@ -460,6 +475,11 @@
     "category": "produits-laitiers-oeufs"
   },
   {
+    "id": "pasteque",
+    "name": "pastèque",
+    "category": "fruits-legumes"
+  },
+  {
     "id": "patate-douce",
     "name": "patate douce",
     "category": "fruits-legumes"
@@ -467,6 +487,11 @@
   {
     "id": "pate-de-curry",
     "name": "pâte de curry",
+    "category": "epices-condiments"
+  },
+  {
+    "id": "pate-de-gochujang",
+    "name": "pâte de gochujang",
     "category": "epices-condiments"
   },
   {
@@ -493,6 +518,11 @@
     "id": "pates-completes",
     "name": "pâtes complètes",
     "category": "feculents"
+  },
+  {
+    "id": "peche",
+    "name": "pêche",
+    "category": "fruits-legumes"
   },
   {
     "id": "persil",
@@ -695,6 +725,11 @@
     "category": "epicerie"
   },
   {
+    "id": "skyr",
+    "name": "skyr",
+    "category": "produits-laitiers-oeufs"
+  },
+  {
     "id": "spaghetti",
     "name": "spaghetti",
     "category": "feculents"
@@ -735,8 +770,18 @@
     "category": "viandes-poissons"
   },
   {
+    "id": "viande-rouge",
+    "name": "viande rouge",
+    "category": "viandes-poissons"
+  },
+  {
     "id": "vinaigre-de-riz",
     "name": "vinaigre de riz",
+    "category": "epicerie"
+  },
+  {
+    "id": "whey",
+    "name": "whey vanille",
     "category": "epicerie"
   },
   {
