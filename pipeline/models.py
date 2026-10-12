@@ -67,6 +67,7 @@ class ExtractionResult(BaseModel):
     isMealPrep: bool
     recipe: ExtractedRecipe | None = None
     newIngredients: list[Ingredient] = Field(default_factory=list)
+    doubt: str | None = None  # reel écarté malgré une hésitation : motif court
 
 
 Status = Literal["pending", "done", "not_meal_prep", "failed"]

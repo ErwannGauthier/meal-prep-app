@@ -439,3 +439,19 @@ def test_remove_nothing_does_not_publish(store):
     svc, published, _ = services(store, FakeExtractor({}))
     assert remove(store, ["ZZZ"], svc.publish) == ([], ["ZZZ"])
     assert published == []
+
+
+def test_summary_lists_only_the_rejected_reels_with_a_doubt_and_their_link(store):
+    feed = FakeFeed([FeedPost("SUR"), FeedPost("DOUTE")])
+    doubtful = ExtractionResult(isMealPrep=False, doubt="plat complet, mais une seule portion")
+    svc, _, _ = services(store, FakeExtractor({"SUR": NOT_MP, "DOUTE": doubtful}), feed=feed)
+    summary = run(cfg(), svc)
+    assert summary.not_meal_prep == 2
+    assert summary.doubtful == [("DOUTE", "plat complet, mais une seule portion")]
+    text = summary.render()
+    assert "https://www.instagram.com/reel/DOUTE/" in text and "plat complet, mais une seule portion" in text
+    assert "SUR" not in text
+    # Le motif reste consultable après coup, sans le journal du lancement.
+    state = store.load_state()
+    assert state.reels["DOUTE"].error == "doute : plat complet, mais une seule portion"
+    assert state.reels["SUR"].error is None

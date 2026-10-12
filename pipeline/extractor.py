@@ -23,7 +23,10 @@ macros données pour le plat entier) ;
    - un test ou une version allégée de « recette virale » (« Yes or Next », « Yes or Guez ») ;
    - tout contenu sans recette (musculation, humour, publicité).
    En cas de doute, réponds false.
-   Si isMealPrep vaut false, renvoie uniquement {{"isMealPrep": false}}.
+   Si isMealPrep vaut false, renvoie uniquement {{"isMealPrep": false, "doubt": ...}}. "doubt" vaut null \
+quand le reel n'est clairement pas un meal prep (pas de recette, dessert, boisson, recette virale…). \
+Si tu as hésité, parce que le reel présente un vrai plat qui pourrait être un meal prep, mets-y le motif \
+en une courte phrase (ex. "plat complet, mais quantités pour une seule portion").
 2. Sinon remplis "recipe" :
    - title : nom court et appétissant de la recette, en français.
    - region : région culinaire d'origine. Réutilise si possible une valeur de cette liste : {regions}. \
@@ -89,7 +92,7 @@ def build_prompt(caption: str, transcript: str, ingredients: list[Ingredient], r
 def validate_result(data: object, known_ids: set[str]) -> ExtractionResult:
     result = ExtractionResult.model_validate(data)
     if not result.isMealPrep:
-        return ExtractionResult(isMealPrep=False)
+        return ExtractionResult(isMealPrep=False, doubt=(result.doubt or "").strip() or None)
     if result.recipe is None:
         raise ValueError("isMealPrep vaut true mais la recette est absente")
     used = {x.ingredientId for x in result.recipe.ingredients}

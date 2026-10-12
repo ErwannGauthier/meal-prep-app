@@ -144,6 +144,7 @@ PATH=/home/<user>/.local/bin:/usr/local/bin:/usr/bin:/bin
 ## Lire le résumé d'un lancement
 
 - **« Arrêt anticipé »** : le lancement s'est arrêté avant la fin de la file, parce qu'Instagram refuse l'accès ou que Claude est indisponible (non connecté, quota atteint). Rien n'est perdu : relancer plus tard reprend au même endroit.
+- **« ? écarté avec un doute »** : Claude a classé ce reel « non meal prep » en hésitant (par exemple un vrai plat, mais pour une seule portion). Le lien et le motif sont affichés pour vérifier à la main ; le motif reste aussi dans `data/state.json` (champ `error`, préfixe `doute :`). Les reels écartés sans hésitation ne sont que comptés.
 - **« reel inaccessible »** : Instagram répond pour d'autres reels mais pas pour celui-ci. Le lien est sans doute mort (reel supprimé ou privé).
 - **« a interrompu 5 lancements de suite »** : le même reel a arrêté cinq lancements sans qu'on puisse dire s'il était en cause. Il est mis de côté pour que la file avance.
 - **« 3 échecs consécutifs »** : trois reels de suite ont échoué. Le problème vient sans doute de l'installation (whisper, ffmpeg, yt-dlp), pas des reels. Corriger, puis `python -m pipeline retry`.

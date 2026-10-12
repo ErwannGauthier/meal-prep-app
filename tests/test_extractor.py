@@ -108,3 +108,20 @@ def test_prompt_restricts_meal_prep_to_batches_of_complete_meals():
     # le prompt doit dire explicitement qu'ils ne comptent pas.
     for marker in ("plusieurs repas", "une seule portion", "dessert", "accompagnement", "en cas de doute"):
         assert marker in p.lower(), marker
+
+
+def test_doubt_on_a_rejected_reel_is_kept(tmp_path):
+    ex, _ = run([claude_ok({"isMealPrep": False, "doubt": "  recette complète mais pour une seule portion "})], tmp_path)
+    r = ex.extract("udon", "", [POULET], [])
+    assert not r.isMealPrep and r.doubt == "recette complète mais pour une seule portion"
+
+
+def test_no_doubt_by_default_and_never_on_a_meal_prep(tmp_path):
+    ex, _ = run([claude_ok({"isMealPrep": False}), claude_ok({**meal_prep(), "doubt": "hésitation"})], tmp_path)
+    assert ex.extract("vlog", "", [POULET], []).doubt is None
+    assert ex.extract("desc", "t", [POULET], []).doubt is None
+
+
+def test_prompt_asks_for_a_doubt_only_when_hesitating():
+    p = build_prompt("x", "y", [POULET], [])
+    assert '"doubt"' in p and "null" in p

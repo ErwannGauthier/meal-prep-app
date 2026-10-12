@@ -38,6 +38,7 @@ class RunSummary:
     processed: int = 0
     new_recipes: list[str] = field(default_factory=list)
     not_meal_prep: int = 0
+    doubtful: list[tuple[str, str]] = field(default_factory=list)  # écartés avec hésitation : (id, motif)
     failed: list[tuple[str, str]] = field(default_factory=list)
     stopped: str | None = None
     feed_error: str | None = None
@@ -55,6 +56,7 @@ class RunSummary:
             f" — non meal prep : {self.not_meal_prep} — échecs : {len(self.failed)}"
         )
         lines += [f"  ✓ {t}" for t in self.new_recipes]
+        lines += [f"  ? écarté avec un doute : {REEL_URL.format(rid)} — {why}" for rid, why in self.doubtful]
         lines += [f"  ✗ {rid} : {err}" for rid, err in self.failed]
         if self.stopped:
             lines.append(f"Arrêt anticipé (reprise au prochain lancement) : {self.stopped}")
@@ -101,8 +103,10 @@ def _store_result(cfg: Config, svc: Services, state: State, rid: str, summary: R
             give_up(state, rid, NOT_MEAL_PREP_ERROR, cfg.max_attempts)
             summary.failed.append((rid, NOT_MEAL_PREP_ERROR))
         else:
-            record_attempt(state, rid, "not_meal_prep")
+            record_attempt(state, rid, "not_meal_prep", f"doute : {result.doubt}" if result.doubt else None)
             summary.not_meal_prep += 1
+            if result.doubt:
+                summary.doubtful.append((rid, result.doubt))
         return
     recipe = _build_recipe(rid, src, result.recipe, store.promote_thumbnail(rid))
     store.upsert_recipe(recipe, result.newIngredients)
