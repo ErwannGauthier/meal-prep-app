@@ -125,3 +125,11 @@ def test_no_doubt_by_default_and_never_on_a_meal_prep(tmp_path):
 def test_prompt_asks_for_a_doubt_only_when_hesitating():
     p = build_prompt("x", "y", [POULET], [])
     assert '"doubt"' in p and "null" in p
+
+
+def test_forced_prompt_tells_claude_the_reel_is_a_confirmed_meal_prep(tmp_path):
+    assert "confirmé à la main" not in build_prompt("x", "y", [POULET], [])
+    assert "confirmé à la main" in build_prompt("x", "y", [POULET], [], force=True)
+    ex, runner = run([claude_ok(meal_prep())], tmp_path)
+    assert ex.extract("desc", "t", [POULET], [], force=True).isMealPrep
+    assert "confirmé à la main" in runner.calls[0].input

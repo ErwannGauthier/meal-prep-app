@@ -5,7 +5,7 @@ import shutil
 import sys
 from pathlib import Path
 
-from .app import Services, import_notion, reextract, remove, run
+from .app import Services, accept, import_notion, reextract, remove, run
 from .config import Config, load_config
 from .errors import PublishError
 from .downloader import Downloader
@@ -84,6 +84,10 @@ def _parser() -> argparse.ArgumentParser:
     rt = sub.add_parser("retry", help="remet dans la file les reels en échec")
     rt.add_argument("ids", nargs="*", help="shortcodes (défaut : tous les reels en échec)")
 
+    ac = sub.add_parser("accept", help="réintègre des reels écartés à tort comme « non meal prep »")
+    ac.add_argument("ids", nargs="+", help="shortcodes des reels à réintégrer")
+    ac.add_argument("--no-publish", action="store_true", help="ne pas faire de git push")
+
     rm = sub.add_parser("remove", help="retire du site des recettes retenues à tort")
     rm.add_argument("ids", nargs="+", help="shortcodes des recettes à retirer")
     rm.add_argument("--no-publish", action="store_true", help="ne pas faire de git push")
@@ -145,7 +149,7 @@ def _dispatch(args: argparse.Namespace, root: Path) -> int:
         return 2
 
     force_cpu = getattr(args, "cpu", False)
-    problems = preflight(cfg, force_cpu, extraction_only=args.command == "reextract")
+    problems = preflight(cfg, force_cpu, extraction_only=args.command in ("reextract", "accept"))
     if problems:
         print("Installation incomplète, rien n'a été traité :", file=sys.stderr)
         for problem in problems:
@@ -155,6 +159,8 @@ def _dispatch(args: argparse.Namespace, root: Path) -> int:
     svc = build_services(cfg, root, force_cpu=force_cpu)
     if args.command == "run":
         summary = run(cfg, svc, do_publish=not args.no_publish)
+    elif args.command == "accept":
+        summary = accept(cfg, svc, args.ids, do_publish=not args.no_publish)
     else:
         summary = reextract(cfg, svc, args.ids or None, do_publish=not args.no_publish)
     print(summary.render())

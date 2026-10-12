@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from pipeline.app import MAX_STALLS, NOT_MEAL_PREP_ERROR, Services, import_notion, reextract, remove, run
+from pipeline.app import MAX_STALLS, NOT_MEAL_PREP_ERROR, Services, accept, import_notion, reextract, remove, run
 from pipeline.config import Config, WhisperConfig
 from pipeline.downloader import Download
 from pipeline.errors import Blocked, ClaudeUnavailable, ReelError
@@ -455,3 +455,41 @@ def test_summary_lists_only_the_rejected_reels_with_a_doubt_and_their_link(store
     state = store.load_state()
     assert state.reels["DOUTE"].error == "doute : plat complet, mais une seule portion"
     assert state.reels["SUR"].error is None
+
+
+class ForcedExtractor(FakeExtractor):
+    """Rejette le reel, sauf si l'extraction est forcée."""
+
+    def __init__(self, forced_result):
+        super().__init__({})
+        self.forced_result, self.forced = forced_result, []
+
+    def extract(self, caption, transcript, ingredients, regions, force=False):
+        self.forced.append(force)
+        return self.forced_result if force else NOT_MP
+
+
+def test_accept_turns_a_rejected_reel_into_a_recipe_without_download(store):
+    extractor = ForcedExtractor(mp("Udon au bœuf"))
+    dl = FakeDownloader(store.work_dir, staging=store.sources_dir)
+    svc, published, _ = services(store, extractor, downloader=dl, feed=FakeFeed([FeedPost("UDON")]))
+    run(cfg(), svc)
+    assert store.load_recipes() == [] and store.load_state().reels["UDON"].status == "not_meal_prep"
+    published.clear()
+    summary = accept(cfg(), svc, ["UDON"])
+    assert summary.new_recipes == ["Udon au bœuf"] and dl.fetched == ["UDON"]   # pas de second téléchargement
+    assert extractor.forced == [False, True]
+    [recipe] = store.load_recipes()
+    assert recipe.id == "UDON" and recipe.thumbnail == "thumbs/UDON.webp"
+    reel = store.load_state().reels["UDON"]
+    assert reel.status == "done" and reel.error is None
+    assert published == ["🍱 data: 1 recette(s) réintégrée(s)"]
+
+
+def test_accept_reports_unknown_reels_and_reels_claude_still_rejects(store):
+    svc, published, _ = services(store, ForcedExtractor(NOT_MP), feed=FakeFeed([FeedPost("MUSCU")]))
+    run(cfg(), svc)
+    summary = accept(cfg(), svc, ["MUSCU", "ZZZ"])
+    assert summary.new_recipes == []
+    assert [rid for rid, _ in summary.failed] == ["MUSCU", "ZZZ"]
+    assert store.load_state().reels["MUSCU"].status == "not_meal_prep"

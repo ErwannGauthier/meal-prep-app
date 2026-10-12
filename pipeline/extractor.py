@@ -78,9 +78,16 @@ def loose_schema() -> dict:
     return clean(ExtractionResult.model_json_schema())
 
 
-def build_prompt(caption: str, transcript: str, ingredients: list[Ingredient], regions: list[str]) -> str:
+FORCED = """
+
+IMPORTANT : ce reel a été confirmé à la main comme meal prep. Ne refais pas le tri de l'étape 1 : \
+isMealPrep vaut true, remplis "recipe" avec ce que la description et la transcription contiennent."""
+
+
+def build_prompt(caption: str, transcript: str, ingredients: list[Ingredient], regions: list[str],
+                 force: bool = False) -> str:
     referential = "\n".join(f"{i.id}: {i.name}" for i in ingredients) or "(vide)"
-    return PROMPT.format(
+    return (PROMPT + (FORCED if force else "")).format(
         regions=", ".join(regions) or "(aucune pour l'instant)",
         categories=", ".join(CATEGORIES),
         ingredients=referential,
@@ -116,8 +123,8 @@ class Extractor:
         self._schema = json.dumps(loose_schema())
 
     def extract(self, caption: str, transcript: str, ingredients: list[Ingredient],
-                regions: list[str]) -> ExtractionResult:
-        prompt = build_prompt(caption, transcript, ingredients, regions)
+                regions: list[str], force: bool = False) -> ExtractionResult:
+        prompt = build_prompt(caption, transcript, ingredients, regions, force)
         known = {i.id for i in ingredients}
         last_error = ""
         for _ in range(2):

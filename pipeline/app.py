@@ -89,9 +89,12 @@ def _build_recipe(rid: str, src: SourceDoc, extracted: ExtractedRecipe, thumbnai
     )
 
 
-def _extract(svc: Services, rid: str):
+def _extract(svc: Services, rid: str, force: bool = False):
     src = svc.store.load_source(rid)
-    result = svc.extractor.extract(src.caption, src.transcript, svc.store.load_ingredients(), _regions(svc.store))
+    extra = {"force": True} if force else {}
+    result = svc.extractor.extract(
+        src.caption, src.transcript, svc.store.load_ingredients(), _regions(svc.store), **extra
+    )
     return src, result
 
 
@@ -277,3 +280,34 @@ def remove(store: Store, ids: list[str], publish: Callable[[str], bool] | None) 
     if removed and publish:
         publish(f"🍱 data: {len(removed)} recette(s) retirée(s)")
     return removed, unknown
+
+
+def accept(cfg: Config, svc: Services, ids: list[str], *, do_publish: bool = True) -> RunSummary:
+    """Réintègre des reels écartés à tort : l'extraction est relancée en imposant « meal prep »."""
+    summary = RunSummary()
+    store = svc.store
+    state = store.load_state()
+    for rid in ids:
+        if rid not in state.reels or not store.has_source(rid):
+            summary.failed.append((rid, "reel inconnu ou sans source enregistrée"))
+            continue
+        try:
+            src, result = _extract(svc, rid, force=True)
+        except ClaudeUnavailable as e:
+            summary.stopped = str(e)
+            break
+        except ReelError as e:
+            summary.failed.append((rid, str(e)))
+            continue
+        summary.processed += 1
+        if not result.isMealPrep:
+            summary.failed.append((rid, "Claude n'y trouve toujours aucune recette de meal prep"))
+            continue
+        recipe = _build_recipe(rid, src, result.recipe, store.promote_thumbnail(rid))
+        store.upsert_recipe(recipe, result.newIngredients)
+        record_attempt(state, rid, "done")
+        summary.new_recipes.append(recipe.title)
+    store.save_state(state)
+    if do_publish and summary.new_recipes:
+        _publish(svc, summary, f"🍱 data: {len(summary.new_recipes)} recette(s) réintégrée(s)")
+    return summary
