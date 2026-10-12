@@ -20,7 +20,7 @@ Répondre en français.
 .venv/bin/pytest                      # tests du pipeline
 cd web && npx vitest run              # tests du site
 cd web && npm run build               # vérification des types + compilation
-.venv/bin/python -m pipeline --help   # import, run, reextract, retry
+.venv/bin/python -m pipeline --help   # import, run, reextract, retry, accept, remove
 ```
 
 ## Conventions git
@@ -41,15 +41,20 @@ cd web && npm run build               # vérification des types + compilation
 - Le contrat de données entre les deux parties est défini par `pipeline/models.py` et `web/src/types.ts` : toute modification de l'un se répercute sur l'autre.
 - Design du site : direction « étiquette nutritionnelle » (police Archivo, couleurs réservées aux trois macros). Toute évolution visuelle passe par le skill `frontend-design`.
 
-## État au 2026-10-10
+## État au 2026-10-12
 
-L'import de la liste de liens est fait, depuis le PC Debian (whisper.cpp sur le GPU AMD). Le catalogue compte 147 recettes, des reels du 2023-07-12 au 2026-10-02, toutes avec miniature et macros, et 149 ingrédients. Deux liens morts sont en échec dans `data/state.json`, vérifiés à la main.
+Le catalogue compte 149 recettes, des reels du 2023-07-12 au 2026-10-09, toutes avec miniature et macros, et 149 ingrédients. Dans `data/state.json` : 149 reels traités, 11 écartés comme « non meal prep », et deux liens morts en échec, vérifiés à la main.
 
 Le site est publié depuis le 2026-10-10 : https://erwanngauthier.github.io/meal-prep-app/. GitHub Pages utilise la source « GitHub Actions ». Le workflow `.github/workflows/deploy.yml` republie le site à chaque push sur `main` qui touche `web/`, donc à chaque commit de données du pipeline.
 
+La détection des nouveaux reels fonctionne sur le PC Debian avec les cookies du compte secondaire (`cookies.txt` à la racine, ignoré par git). Premier lancement réel le 2026-10-12 : 13 reels trouvés, 2 meal preps retenus.
+
+Le créateur publie aussi des recettes à la portion, des desserts, des tests de « recettes virales » et des vidéos de musculation. Seuls les vrais meal preps (plusieurs repas complets préparés en une fois) sont retenus : le critère est dans le prompt de `pipeline/extractor.py`, avec « en cas de doute, écarter ». Le résumé d'un lancement liste les reels écartés avec un doute (lien et motif, repris dans `state.json` avec le préfixe `doute :`). Corrections à la main : `accept <code>` réintègre un reel écarté à tort, `remove <code>` retire une recette retenue à tort.
+
 Reste à faire :
 
-1. **Détection des nouveaux reels.** Le listing fonctionne avec les cookies d'un compte secondaire (gallery-dl, vérifié le 2026-10-10 : 10 reels inconnus trouvés). Il reste à configurer `cookies_file` sur le PC Debian, à y réinstaller les dépendances (`.venv/bin/pip install -e .`) et à faire un premier lancement réel : `lastFeedCheck` vaut encore `null` dans `data/state.json`. Sans compte, Instagram refuse le listing.
+1. **Lancement automatique.** Aucun cron n'est installé sur le PC Debian : le pipeline ne tourne que lancé à la main (section 7 de `docs/pipeline-setup.md`).
 2. **Tester sur iPhone.** Le partage vers Notes, « Copier la liste », le retour arrière vers la liste filtrée, le champ de recherche, et le panneau d'ingrédients avec les 149 ingrédients réels. Rien de tout cela n'a encore été vérifié sur un vrai iPhone.
 3. **Régions manquantes.** 28 recettes n'ont pas de région et échappent au filtre par région.
 4. **Noms d'ingrédients.** Dans `ingredients.json`, les noms sont en minuscules et certains sont plus précis que leur identifiant (`riz` s'appelle « riz basmati », `asperges` « asperge verte »). Ils s'affichent tels quels dans les filtres.
+5. **Critère meal prep.** Vérifié sur 44 reels seulement (les 13 du feed et 31 de la liste d'origine). À surveiller sur les prochains lancements, surtout les faux rejets.
