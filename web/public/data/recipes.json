@@ -1,5 +1,223 @@
 [
   {
+    "title": "Beef loc lac",
+    "region": "Asie du Sud-Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "boeuf",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de viande rouge"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz cru"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 5.0,
+        "unit": "pièce",
+        "raw": "5 œufs"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon-rouge",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon rouge"
+      },
+      {
+        "ingredientId": "salade",
+        "quantity": null,
+        "unit": null,
+        "raw": "Salade"
+      },
+      {
+        "ingredientId": "tomate",
+        "quantity": null,
+        "unit": null,
+        "raw": "Tomates"
+      },
+      {
+        "ingredientId": "concombre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Concombre"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce soja"
+      },
+      {
+        "ingredientId": "sauce-huitre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce huître"
+      },
+      {
+        "ingredientId": "concentre-de-tomate",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de concentré de tomate"
+      }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Couper la viande en cubes et la faire mariner avec l'ail, la sauce soja et la sauce huître.",
+      "Saisir la viande à feu vif avec l'oignon rouge.",
+      "Ajouter le concentré de tomate et laisser napper la viande.",
+      "Faire cuire les œufs au plat.",
+      "Couper la salade, les tomates et le concombre.",
+      "Répartir le riz, la viande, l'œuf et la salade dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 685,
+      "protein": 51,
+      "carbs": 86,
+      "fat": 14,
+      "source": "announced"
+    },
+    "id": "De2ImJMoQZg",
+    "url": "https://www.instagram.com/reel/De2ImJMoQZg/",
+    "postedAt": "2026-10-23",
+    "thumbnail": "thumbs/De2ImJMoQZg.webp",
+    "extractedAt": "2026-10-24T10:54:46Z"
+  },
+  {
+    "title": "Bowl patate douce, bœuf & guacamole",
+    "region": "Mexique",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "patate-douce",
+        "quantity": 1.5,
+        "unit": "kg",
+        "raw": "1,5 kg de patates douces"
+      },
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de viande hachée 5%"
+      },
+      {
+        "ingredientId": "epices",
+        "quantity": null,
+        "unit": null,
+        "raw": "Épices (mélange tout prêt, ou paprika et cumin)"
+      },
+      {
+        "ingredientId": "poivron",
+        "quantity": 2.0,
+        "unit": "pièce",
+        "raw": "2 poivrons"
+      },
+      {
+        "ingredientId": "oignon-rouge",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon rouge"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "avocat",
+        "quantity": 2.0,
+        "unit": "pièce",
+        "raw": "2 avocats"
+      },
+      {
+        "ingredientId": "coriandre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Coriandre"
+      },
+      {
+        "ingredientId": "citron-vert",
+        "quantity": 1.0,
+        "unit": "pièce",
+        "raw": "1 citron vert"
+      },
+      {
+        "ingredientId": "tomate",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de tomates"
+      },
+      {
+        "ingredientId": "cannelle",
+        "quantity": null,
+        "unit": null,
+        "raw": "Cannelle"
+      },
+      {
+        "ingredientId": "mozzarella",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de mozzarella râpée"
+      },
+      {
+        "ingredientId": "petits-suisses",
+        "quantity": 240.0,
+        "unit": "g",
+        "raw": "240 g de petits-suisses"
+      },
+      {
+        "ingredientId": "huile",
+        "quantity": null,
+        "unit": null,
+        "raw": "Huile"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Préchauffe le four à 220°.",
+      "Coupe les patates douces en deux, assaisonne avec huile, sel, poivre et cannelle.",
+      "Place les patates douces face coupée vers le bas sur une plaque et enfourne 35 à 40 minutes.",
+      "Coupe les poivrons, l'oignon rouge et les tomates, puis fais-les revenir à la poêle.",
+      "Ajoute la viande hachée, assaisonne avec les épices, sel, poivre et ail, puis laisse bien cuire.",
+      "Écrase les avocats avec le citron vert, la coriandre et un peu de tomate pour faire le guacamole.",
+      "Répartis patates douces, viande, guacamole, mozzarella et petits-suisses dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 730,
+      "protein": 52,
+      "carbs": 78,
+      "fat": 26,
+      "source": "announced"
+    },
+    "id": "DekI_2gud4K",
+    "url": "https://www.instagram.com/reel/DekI_2gud4K/",
+    "postedAt": "2026-10-16",
+    "thumbnail": "thumbs/DekI_2gud4K.webp",
+    "extractedAt": "2026-10-24T10:50:14Z"
+  },
+  {
     "title": "Poulet caramélisé à l'orange",
     "region": "Asie de l'Est",
     "portions": 5,
