@@ -1383,7 +1383,111 @@
       "stalls": 0,
       "error": null,
       "updatedAt": "2026-10-24T10:54:46Z"
+    },
+    "De4sVktxqbW": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-07T15:20:39Z"
+    },
+    "De7ae7mO_IO": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": "doute : plat complet, mais quantités et macros pour une seule portion (un bowl)",
+      "updatedAt": "2026-11-07T15:21:29Z"
+    },
+    "De985fOO_39": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-07T15:21:59Z"
+    },
+    "DfAhlXgR3aA": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-07T15:22:29Z"
+    },
+    "DfDFFreu09q": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-07T15:23:45Z"
+    },
+    "DfIN5MbuZfQ": {
+      "status": "done",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-07T15:25:15Z"
+    },
+    "DfKBypnxNSj": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-07T15:25:37Z"
+    },
+    "DfKzjD7xT2c": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-07T15:26:40Z"
+    },
+    "DfNc7y-OWDP": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": "doute : plat complet, mais quantités pour une seule portion (macros données pour le plat entier)",
+      "updatedAt": "2026-11-07T15:27:20Z"
+    },
+    "DfP9WBpOTe6": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-07T15:27:41Z"
+    },
+    "DfSjBhgxq2a": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-07T15:28:10Z"
+    },
+    "DfVJ_D5uMWg": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-07T15:29:19Z"
+    },
+    "DfaQO4VRlhH": {
+      "status": "done",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-07T15:30:46Z"
     }
   },
-  "lastFeedCheck": "2026-10-24T10:46:37Z"
+  "lastFeedCheck": "2026-11-07T15:19:50Z"
 }

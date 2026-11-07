@@ -1,5 +1,209 @@
 [
   {
+    "title": "Burrito bowl, sauce fromagère",
+    "region": "Mexique",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "viande-hachee",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de viande hachée 5%"
+      },
+      {
+        "ingredientId": "pommes-de-terre",
+        "quantity": 1.25,
+        "unit": "kg",
+        "raw": "1 à 1,5 kg de pommes de terre"
+      },
+      {
+        "ingredientId": "poivron-rouge",
+        "quantity": 2.0,
+        "unit": "pièce",
+        "raw": "2 poivrons rouges"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 10.0,
+        "unit": "pièce",
+        "raw": "10 œufs"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignons"
+      },
+      {
+        "ingredientId": "cancoillotte",
+        "quantity": 200.0,
+        "unit": "g",
+        "raw": "200 g de cancoillotte"
+      },
+      {
+        "ingredientId": "petits-suisses",
+        "quantity": null,
+        "unit": null,
+        "raw": "Petits suisses (pour la sauce)"
+      },
+      {
+        "ingredientId": "cumin",
+        "quantity": null,
+        "unit": null,
+        "raw": "Cumin"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika (fumé pour les pommes de terre)"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "huile",
+        "quantity": null,
+        "unit": null,
+        "raw": "Huile"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "persil",
+        "quantity": null,
+        "unit": null,
+        "raw": "Persil"
+      }
+    ],
+    "steps": [
+      "Coupe les pommes de terre en dés et laisse-les tremper dans l'eau pour retirer l'amidon.",
+      "Égoutte-les, puis mélange-les avec l'huile, le sel, l'ail et le paprika fumé.",
+      "Étale sur une plaque et enfourne 25 minutes à 220 °C.",
+      "Coupe les poivrons et les oignons, puis fais-les revenir à la poêle.",
+      "Ajoute la viande hachée, assaisonne avec le cumin et le paprika, et cuis jusqu'à la fin de cuisson.",
+      "Ajoute le persil.",
+      "Prépare les 10 œufs en brouillade.",
+      "Mélange la cancoillotte avec les petits suisses pour la sauce fromagère.",
+      "Répartis le tout dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 693,
+      "protein": 63,
+      "carbs": 57,
+      "fat": 21,
+      "source": "announced"
+    },
+    "id": "DfaQO4VRlhH",
+    "url": "https://www.instagram.com/reel/DfaQO4VRlhH/",
+    "postedAt": "2026-11-06",
+    "thumbnail": "thumbs/DfaQO4VRlhH.webp",
+    "extractedAt": "2026-11-07T15:30:46Z"
+  },
+  {
+    "title": "Ramen crémeux au poulet",
+    "region": "Asie de l'Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 10.0,
+        "unit": "pièce",
+        "raw": "10 oeufs"
+      },
+      {
+        "ingredientId": "oignons-jeunes",
+        "quantity": null,
+        "unit": null,
+        "raw": "oignons jeunes (cébettes)"
+      },
+      {
+        "ingredientId": "coriandre",
+        "quantity": null,
+        "unit": null,
+        "raw": "coriandre"
+      },
+      {
+        "ingredientId": "beurre-de-cacahuetes",
+        "quantity": null,
+        "unit": null,
+        "raw": "beurre de cacahuète 100 % cacahuète"
+      },
+      {
+        "ingredientId": "pate-de-curry",
+        "quantity": null,
+        "unit": null,
+        "raw": "pâte de curry"
+      },
+      {
+        "ingredientId": "lait-de-coco",
+        "quantity": null,
+        "unit": null,
+        "raw": "lait de coco allégé"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": null,
+        "unit": null,
+        "raw": "sauce soja"
+      },
+      {
+        "ingredientId": "nouilles-ramen",
+        "quantity": null,
+        "unit": null,
+        "raw": "1 paquet de nouilles (udon ou ramen)"
+      },
+      {
+        "ingredientId": "citron-vert",
+        "quantity": null,
+        "unit": null,
+        "raw": "citron vert (optionnel)"
+      },
+      {
+        "ingredientId": "epinards",
+        "quantity": null,
+        "unit": null,
+        "raw": "un peu d'épinards (optionnel)"
+      }
+    ],
+    "steps": [
+      "Fais cuire les oeufs durs.",
+      "Mélange la sauce soja, le beurre de cacahuète et le citron vert pour faire la sauce du poulet.",
+      "Trempe les filets de poulet dans la sauce.",
+      "Cuis le poulet 15 minutes à 200 °C au four ou à l'air fryer.",
+      "Prépare la sauce des ramen de la même façon en ajoutant la pâte de curry.",
+      "Verse le lait de coco, ajoute les nouilles, les oignons jeunes, la coriandre et les épinards.",
+      "Mélange bien jusqu'à ce que les nouilles soient cuites.",
+      "Émince le poulet.",
+      "Répartis les ramen et le poulet dans 5 boîtes, puis ajoute les oeufs durs."
+    ],
+    "macros": {
+      "kcal": 700,
+      "protein": 69,
+      "carbs": 38,
+      "fat": 28,
+      "source": "announced"
+    },
+    "id": "DfIN5MbuZfQ",
+    "url": "https://www.instagram.com/reel/DfIN5MbuZfQ/",
+    "postedAt": "2026-10-30",
+    "thumbnail": "thumbs/DfIN5MbuZfQ.webp",
+    "extractedAt": "2026-11-07T15:25:15Z"
+  },
+  {
     "title": "Beef loc lac",
     "region": "Asie du Sud-Est",
     "portions": 5,
