@@ -1487,7 +1487,103 @@
       "stalls": 0,
       "error": null,
       "updatedAt": "2026-11-07T15:30:46Z"
+    },
+    "Dfc0e9vxA3x": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-21T16:06:19Z"
+    },
+    "DffZ1AsxM7N": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-21T16:07:09Z"
+    },
+    "Dfh9orDufC7": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-21T16:07:51Z"
+    },
+    "Dfkl5Wwurj2": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-21T16:08:13Z"
+    },
+    "DfnIPAMRBaK": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-21T16:09:28Z"
+    },
+    "DfsR5Z_xU0v": {
+      "status": "done",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-21T16:10:38Z"
+    },
+    "Dfu31wXx4DU": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-21T16:11:49Z"
+    },
+    "DfxbcfMRk7r": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": "doute : plat complet, mais quantités pour une seule portion (macros du plat entier)",
+      "updatedAt": "2026-11-21T16:12:18Z"
+    },
+    "Df0AQDnx5as": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-21T16:12:59Z"
+    },
+    "Df2m8g_uRgr": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-21T16:13:38Z"
+    },
+    "Df5JXtmuFIS": {
+      "status": "not_meal_prep",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-21T16:14:32Z"
+    },
+    "Df-VE5uiSer": {
+      "status": "done",
+      "source": "feed",
+      "attempts": 1,
+      "stalls": 0,
+      "error": null,
+      "updatedAt": "2026-11-21T16:15:42Z"
     }
   },
-  "lastFeedCheck": "2026-11-07T15:19:50Z"
+  "lastFeedCheck": "2026-11-21T16:05:26Z"
 }

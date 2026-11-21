@@ -1,5 +1,238 @@
 [
   {
+    "title": "Poulet satay cacahuètes et riz",
+    "region": "Asie du Sud-Est",
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "poulet",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de poulet"
+      },
+      {
+        "ingredientId": "riz",
+        "quantity": 500.0,
+        "unit": "g",
+        "raw": "500 g de riz cru"
+      },
+      {
+        "ingredientId": "beurre-de-cacahuetes",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de beurre de cacahuètes"
+      },
+      {
+        "ingredientId": "lait-de-coco",
+        "quantity": 20.0,
+        "unit": "cl",
+        "raw": "20 cl de lait de coco allégé (ou crème allégée)"
+      },
+      {
+        "ingredientId": "pate-de-curry",
+        "quantity": 50.0,
+        "unit": "g",
+        "raw": "50 g de pâte de curry rouge"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "sauce-soja",
+        "quantity": 40.0,
+        "unit": "ml",
+        "raw": "40 ml de sauce soja"
+      },
+      {
+        "ingredientId": "sauce-huitre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sauce huîtres"
+      },
+      {
+        "ingredientId": "oeuf",
+        "quantity": 10.0,
+        "unit": "pièce",
+        "raw": "10 oeufs"
+      },
+      {
+        "ingredientId": "brocoli",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de brocolis"
+      },
+      {
+        "ingredientId": "coriandre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Coriandre"
+      },
+      {
+        "ingredientId": "cacahuetes",
+        "quantity": null,
+        "unit": null,
+        "raw": "Un peu de cacahuètes en topping"
+      }
+    ],
+    "steps": [
+      "Cuire le poulet 15 à 20 minutes à 200° au four ou à l'Air fryer.",
+      "Cuire le riz.",
+      "Cuire les brocolis et les oeufs.",
+      "Mélanger le beurre de cacahuètes, le lait de coco, la pâte de curry, l'ail, la sauce soja et la sauce huîtres pour la sauce satay.",
+      "Napper le poulet de sauce.",
+      "Répartir le riz, le poulet, les brocolis et les oeufs dans 5 boîtes.",
+      "Ajouter la coriandre et quelques cacahuètes en topping."
+    ],
+    "macros": {
+      "kcal": 855,
+      "protein": 73,
+      "carbs": 85,
+      "fat": 25,
+      "source": "announced"
+    },
+    "id": "Df-VE5uiSer",
+    "url": "https://www.instagram.com/reel/Df-VE5uiSer/",
+    "postedAt": "2026-11-20",
+    "thumbnail": "thumbs/Df-VE5uiSer.webp",
+    "extractedAt": "2026-11-21T16:15:42Z"
+  },
+  {
+    "title": "Bœuf persillé, patates douces et petits pois",
+    "region": null,
+    "portions": 5,
+    "ingredients": [
+      {
+        "ingredientId": "boeuf",
+        "quantity": 750.0,
+        "unit": "g",
+        "raw": "750 g de bœuf"
+      },
+      {
+        "ingredientId": "patate-douce",
+        "quantity": 1.0,
+        "unit": "kg",
+        "raw": "1 kg de patates douces"
+      },
+      {
+        "ingredientId": "petits-pois",
+        "quantity": 600.0,
+        "unit": "g",
+        "raw": "600 g de petits pois"
+      },
+      {
+        "ingredientId": "petits-suisses",
+        "quantity": 240.0,
+        "unit": "g",
+        "raw": "240 g de petits-suisses 0 %"
+      },
+      {
+        "ingredientId": "parmesan",
+        "quantity": 100.0,
+        "unit": "g",
+        "raw": "100 g de parmesan"
+      },
+      {
+        "ingredientId": "moutarde",
+        "quantity": 30.0,
+        "unit": "g",
+        "raw": "30 g de moutarde à l'ancienne"
+      },
+      {
+        "ingredientId": "ail",
+        "quantity": null,
+        "unit": null,
+        "raw": "Ail"
+      },
+      {
+        "ingredientId": "oignon",
+        "quantity": null,
+        "unit": null,
+        "raw": "Oignon"
+      },
+      {
+        "ingredientId": "echalote",
+        "quantity": null,
+        "unit": null,
+        "raw": "Échalote"
+      },
+      {
+        "ingredientId": "persil",
+        "quantity": null,
+        "unit": null,
+        "raw": "Persil"
+      },
+      {
+        "ingredientId": "paprika",
+        "quantity": null,
+        "unit": null,
+        "raw": "Paprika"
+      },
+      {
+        "ingredientId": "origan",
+        "quantity": null,
+        "unit": null,
+        "raw": "Origan"
+      },
+      {
+        "ingredientId": "curry",
+        "quantity": null,
+        "unit": null,
+        "raw": "Curry (optionnel)"
+      },
+      {
+        "ingredientId": "cumin",
+        "quantity": null,
+        "unit": null,
+        "raw": "Cumin (optionnel)"
+      },
+      {
+        "ingredientId": "huile",
+        "quantity": null,
+        "unit": null,
+        "raw": "Huile"
+      },
+      {
+        "ingredientId": "sel",
+        "quantity": null,
+        "unit": null,
+        "raw": "Sel"
+      },
+      {
+        "ingredientId": "poivre",
+        "quantity": null,
+        "unit": null,
+        "raw": "Poivre"
+      }
+    ],
+    "steps": [
+      "Préchauffe le four à 220 °C.",
+      "Assaisonne les patates douces avec huile, sel, paprika et origan, puis étale-les sur une plaque.",
+      "Enfourne les patates douces 25 minutes.",
+      "Coupe l'oignon, l'échalote et le persil.",
+      "Assaisonne la viande avec huile, sel, poivre, persil et origan.",
+      "Fais revenir la viande dans une poêle avec l'ail jusqu'à ce qu'elle soit bien dorée.",
+      "Ajoute les patates douces croustillantes, le reste de persil et 50 g de parmesan à la viande.",
+      "Fais revenir les petits pois avec l'oignon et l'échalote dans une poêle.",
+      "Mélange les petits-suisses, la moutarde et le reste de parmesan pour faire la sauce fromagère.",
+      "Répartis le tout dans 5 boîtes."
+    ],
+    "macros": {
+      "kcal": 598,
+      "protein": 55,
+      "carbs": 62,
+      "fat": 17,
+      "source": "announced"
+    },
+    "id": "DfsR5Z_xU0v",
+    "url": "https://www.instagram.com/reel/DfsR5Z_xU0v/",
+    "postedAt": "2026-11-13",
+    "thumbnail": "thumbs/DfsR5Z_xU0v.webp",
+    "extractedAt": "2026-11-21T16:10:38Z"
+  },
+  {
     "title": "Burrito bowl, sauce fromagère",
     "region": "Mexique",
     "portions": 5,
